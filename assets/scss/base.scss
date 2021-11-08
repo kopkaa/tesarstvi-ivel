@@ -1,0 +1,38 @@
+:root {
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', 'Roboto';
+}
+
+html, body, #__nuxt, #__layout, header {
+    margin: 0;
+    font-size: 16px;
+    height: 100%;
+}
+
+h2 {
+    color: $text-color;
+    text-decoration: none;
+    @include fontLato(1.8rem, 800);
+    padding: 0;
+}
+
+
+p {
+    color: $text-color;
+    @include fontLato(1rem, 500);
+    margin-top: 0px;
+}
+
+.ml-14 {
+    margin-left: 14px;
+}
+
+

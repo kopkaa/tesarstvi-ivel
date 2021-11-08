@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&display=swap');
+
+@mixin fontLato($size, $weight) {
+	font-family: 'Quicksand', sans-serif;
+	font-size: $size;
+	font-weight: $weight;
+}
+$font_normal_text: 1rem;
+$font_small_text: 0.75rem;
+$layout_padding: 15vw;
+$layout_padding_middle: 12vw;
+
+// colors
+$light_grey: #EFF1F5;
+$sub_paragraph: #696969;
+$text-color: #bdc3c7;
+$beaver: #a9845aff;
+$main_color: #be986d;
+$menu_items: #a48971ff;
+$footer_color: #8d6b48;
+$text_color: #2d3436;
