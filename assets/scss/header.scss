@@ -8,7 +8,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
 
     &--title {
       position: absolute;
@@ -30,6 +29,10 @@ header {
         padding: 0 5em;
         text-shadow: 2px 1px black;
       }
+    }
+
+    &--homepage {
+      height: 100%;
     }
   }
 
@@ -107,7 +110,7 @@ header {
   @include fontLato(1rem, 500);
   text-transform: uppercase;
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
   display: block;
   margin: auto;
   margin-top: 2.5rem;
@@ -124,6 +127,6 @@ header {
   &:hover {
     cursor: pointer;
     opacity: 0.9;
-    background-color: $main_color;
+    background-color: darken($main_color, 15%);
   }
 }

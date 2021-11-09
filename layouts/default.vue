@@ -1,5 +1,5 @@
 <template>
-  <Menu />
+  <Nuxt />
 </template>
 
 <script>
