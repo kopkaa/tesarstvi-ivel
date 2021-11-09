@@ -1,136 +1,129 @@
 header {
-	
-	.header__main {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-image:    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),  url('../../img/background.jpg');
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		height: 100%;
+  .header__main {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
 
-    	&--title {
-    		position: absolute;
-    		bottom: 50%;
-		    transform: translateY(50%);
-    		text-align: center;
+    &--title {
+      position: absolute;
+      bottom: 50%;
+      transform: translateY(50%);
+      text-align: center;
 
-    		.main {
-    			@include fontLato(4rem, 600);
-    			text-transform: uppercase;
-					color: white;
-    			margin: 0px!important;
-    		}
+      .main {
+        @include fontLato(4rem, 600);
+        text-transform: uppercase;
+        color: white;
+        margin: 0px !important;
+      }
 
-    		.second {
-    			display: block;
-    			color: white;
-    			@include fontLato(1.2rem, 500);
-					padding: 0 5em;  
-					text-shadow: 2px 1px black; 		
-    		}
-    	}
+      .second {
+        display: block;
+        color: white;
+        @include fontLato(1.2rem, 500);
+        padding: 0 5em;
+        text-shadow: 2px 1px black;
+      }
+    }
+  }
 
+  nav {
+    display: flex;
+    align-items: center;
+    div {
+      flex: 1;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      list-style-type: none;
+      margin-right: 2rem;
+      overflow: hidden;
+      min-height: 35px;
+      width: 100%;
+
+      img {
+        width: 145px;
+        height: auto;
+      }
     }
 
-	nav {
-		display: flex;
-		align-items: center;
-		border-bottom: 5px solid $main-color;
-		div {
-			flex: 1;
+    li {
+      color: $text-color;
+      padding: 1rem;
+      margin-right: 0.875rem;
+    }
 
-			img {
-				max-width: 100%;
-				height: auto;
-			}
-		}
-		ul {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			list-style-type: none;
-			margin: 0;
-			overflow: hidden;
-			min-height: 35px;
+    li a {
+      @include fontLato(0.938rem, 800);
+      display: block;
+      color: $light_grey;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
 
-			img {
-				width: 145px;
-				height: auto;
-			}
-		}
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: $light_grey;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+      }
 
-		li {
-			color: $text-color;
-			padding: 1rem;
-			margin-right: 0.875rem;
-		}
+      &:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
 
-		li a {
-			@include fontLato(0.938rem, 800);
-			display: block;
-			color: $text-color;
-			text-decoration: none;
-			text-transform: uppercase;
-			position: relative;
-	
-			&:before {
-				content: "";
-				position: absolute;
-				width: 100%;
-				height: 2px;
-				bottom: -5px;
-				left: 0;
-				background-color:darken($text-color, 20%);
-				visibility: hidden;
-				transform: scaleX(0);
-				transition: all 0.3s ease-in-out 0s;
-			}
+    }
+  }
 
-			&:hover::before {
-				visibility: visible;
-				transform: scaleX(1);
-			}
-			&:hover {
-				color: darken($text-color, 20%);
-			}
-		}
-	}
-
-	.hamburger {
-	    color: black;
-	    font-weight: bolder;
-	    display: none;
-	    zoom: 185%;
-	}
-
+  .hamburger {
+    color: black;
+    font-weight: bolder;
+    display: none;
+    zoom: 185%;
+  }
 }
 
 .header-button {
-	@include fontLato(1rem, 500);
-	text-transform: uppercase;
-	background-color: $main_color;
-	display: block;
-	margin: auto;
-	margin-top: 2.5rem;
-	border: none;
-	border-radius: 3px;
-	color: white;
-	padding: 1rem 2rem;
-	transition: 0.3s;
+  @include fontLato(1rem, 500);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid white;
+  display: block;
+  margin: auto;
+  margin-top: 2.5rem;
+  font-weight: bold;
+  border-radius: 3px;
+  color: white;
+  padding: 0.875rem 2rem;
+  transition: 0.3s;
 
-	a {
-			text-decoration: none;
-			color: white;
-	}
-	&:hover {
-			cursor: pointer;
-			background-color: darken($beaver, 15%);
-	}
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: $main_color;
+  }
 }
