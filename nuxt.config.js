@@ -14,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Tesařství kabeláč. Tesařské práce všeho druhu. Rekonstrukce střech, podlah, dřevěnic, srubů, pokrývačské práce' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'keywords', content: 'content="tesařství, střechy, stavby, pokrývačství, krovy, dřevo"' }
     ],
