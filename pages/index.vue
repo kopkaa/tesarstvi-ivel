@@ -51,24 +51,24 @@
         <div class="homepage__main--work__wrapper">
           <div class="card">
             <!-- TODDO scale image on hover -->
-            <img src="../img/work/01.jpg" alt="reference" title="reference" @click="openLightbox">
+            <img src="../img/work/01.jpg" alt="reference" title="reference" @click="openLightbox(0)">
             <span class="card__text">
               <p><b>Realizace pergoly</b></p>
               <p class="card__text--small">Pergoly</p>
             </span>
           </div>
           <div class="card">
-            <!-- <a href="./img/work/strecha02.jpg" data-lightbox="show-1" data-title="Práce"><img src="./img/work/strecha02.jpg" alt="reference" title="reference"></img> -->
+            <img src="../img/work/strecha02.jpg" alt="reference" title="reference" @click="openLightbox(1)">
             <span class="card__text">
               <p><b>Realizace střesního krovu</b></p>
               <p class="card__text--small">Krovy</p>
             </span>
           </div>
           <div class="photo-list">
-            <!-- <a href="./img/work/zahrada03.jpg" data-lightbox="show-1" data-title="Práce"><img src="./img/work/zahrada03.jpg" class="" alt="práce"></a>
-            <a href="./img/work/zahrada01.jpg" data-lightbox="show-1" data-title="Práce"><img src="./img/work/zahrada01.jpg" class="" alt="práce"></a>
-            <a href="./img/work/podlaha01.jpg" data-lightbox="show-1" data-title="Práce"><img src="./img/work/podlaha01.jpg" class="" alt="práce"></a>
-            <a href="./img/work/krov04.jpg" data-lightbox="show-1" data-title="Práce"><img src="./img/work/krov04.jpg" class="" alt="práce"></a> -->
+            <img src="../img/work/zahrada03.jpg" class="" alt="práce">
+            <img src="../img/work/zahrada01.jpg" class="" alt="práce">
+            <img src="../img/work/podlaha01.jpg" class="" alt="práce">
+            <img src="../img/work/krov04.jpg" class="" alt="práce">
           </div>
           <div class="photo-list__controls">
             <span class="dot" />
@@ -89,7 +89,7 @@
       </section>
     </main>
     <Footer />
-    <Lightbox :is-open="isLightboxOpened" @closeLightbox="isLightboxOpened=false" />
+    <Lightbox :is-open="isLightboxOpened" :images="images" :thumbnail="id" @closeLightbox="isLightboxOpened=false" />
   </div>
 </template>
 
@@ -97,15 +97,21 @@
 import tool from '../img/icons/tool.svg'
 import heart from '../img/icons/heart.svg'
 import time from '../img/icons/time.svg'
+import work1 from '../img/work/01.jpg'
+import work2 from '../img/work/strecha02.jpg'
+// import work1 from '../img/work/01.jpg'
+// import work1 from '../img/work/01.jpg'
 export default {
   data () {
     return {
       isLightboxOpened: false,
+      id: 0,
       tool,
       heart,
       time,
       images: [
-        '../img/work/01.jpg',
+        work1,
+        work2,
         '../img/work/02.jpg',
         '../img/work/03.jpg'
       ]
@@ -113,7 +119,8 @@ export default {
   },
 
   methods: {
-    openLightbox () {
+    openLightbox (id) {
+      this.id = id
       this.isLightboxOpened = true
     }
   }

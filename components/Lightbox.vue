@@ -1,8 +1,8 @@
 <template>
-  <div v-if="isOpen" class="lightbox">
+  <div v-if="isOpen" class="lightbox" @keyup.esc="closeLightbox">
     <div class="lightbox__wrapper">
       <span title="Close" class="close" @click="closeLightbox">&times;</span>
-      <img src="../img/work/01.jpg">
+      <img :src="images[thumbnail]">
     </div>
   </div>
 </template>
@@ -11,7 +11,7 @@
 export default {
   props: {
     thumbnail: {
-      type: String,
+      type: Number,
       required: true
     },
     images: {
@@ -29,6 +29,14 @@ export default {
     return {
       index: 0
     }
+  },
+
+  mounted () {
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        this.closeLightbox()
+      }
+    })
   },
 
   methods: {

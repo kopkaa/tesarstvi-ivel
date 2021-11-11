@@ -116,11 +116,20 @@ footer {
     }
 
     p {
-      font-size: 1rem;
+      font-size: 0.875rem;
       text-align: center;
       color: white;
       padding: 14px 0px;
       margin-bottom: 0px !important;
+      text-transform: uppercase;
+
+      a {
+        color: #3498db;
+
+        &:hover {
+          color: lighten(#3498db, 10%);
+        }
+      }
     }
 
     ul {

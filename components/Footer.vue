@@ -21,7 +21,8 @@
       </div>
     </div>
     <div class="footer-second">
-      <p> &copy; Created by <a href="mailto:janxhromadka@outlook.cz">Jan Hromádka</a></p>
+      <!-- TODO: pridat srdce -->
+      <p>© Created by <a href="mailto:janxhromadka@outlook.cz">Jan Hromádka</a></p>
       <ul>
         <li><a href="index.html">Úvod</a></li>
         <li><a href="services.html">Služby</a></li>
@@ -35,13 +36,15 @@
 import email from '../img/icons/mail.svg'
 import pin from '../img/icons/map-pin.svg'
 import phone from '../img/icons/phone.svg'
+import heart from '../img/icons/heart.svg'
 
 export default {
   data () {
     return {
       email,
       pin,
-      phone
+      phone,
+      heart
     }
   }
 }
