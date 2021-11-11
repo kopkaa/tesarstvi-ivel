@@ -51,6 +51,11 @@
 						align-items: center;
 						color: $text-color;
 			    	margin-top: 0px;
+
+            img {
+              margin-right: 1rem;
+              width: 30px;
+            }
 		    	}
 			}
 		}
@@ -93,6 +98,15 @@
 					&:hover {
 						box-shadow: 3px 4px 2px grey;
 					}
+
+          img {
+            transform: scale(0.9);
+          }
+
+          img:hover {
+            cursor: pointer;
+            transform: scale(1);
+          }
 				}
 
 				.photo-list {

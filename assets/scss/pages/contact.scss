@@ -1,7 +1,8 @@
 #contact {
   background-color: $light-grey;
   padding-top: 3rem;
-  h2,p {
+  h2,
+  p {
     text-align: center;
     margin: 0px;
     margin-bottom: 0.83em;
@@ -10,7 +11,6 @@
   p {
     color: #696969;
     font-size: 1rem;
-
   }
 
   .line {
@@ -40,38 +40,37 @@
     display: flex;
     padding: 3rem $layout_padding;
     justify-content: center;
-     &__form {
-       display: flex;
-       flex-direction: column;
-       flex: 2;
-       max-width: 45%;
 
-       input,
-       textarea {
-         padding: 0.625rem .75rem;
-         font-family: 'Lato';
-         color: black;
-         font-size: 0.875em;
-         border:none;
-         margin-bottom: 2rem;
-         border-radius: 24px;
-       }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      max-width: 45%;
 
-       textarea {
-         min-height: 150px;
-       }
+      input,
+      textarea {
+        padding: 0.625rem 0.75rem;
+        font-family: "Lato";
+        color: black;
+        font-size: 0.875em;
+        border: none;
+        margin-bottom: 2rem;
+        border-radius: 24px;
+      }
 
-       #submit {
-         color: white;
-         margin: 0px;
-         font-weight: 500;
-       }
+      textarea {
+        min-height: 150px;
+      }
 
-     }
+      #submit {
+        color: white;
+        margin: 0px;
+        font-weight: 500;
+      }
+    }
 
-     &__info {
-       flex: 3;
-     }
+    &__info {
+      flex: 3;
+    }
   }
 }
-

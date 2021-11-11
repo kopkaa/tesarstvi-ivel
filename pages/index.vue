@@ -50,14 +50,15 @@
         </p>
         <div class="homepage__main--work__wrapper">
           <div class="card">
-            <!-- <a href="./img/work/01.jpg" data-lightbox="show-1" data-title="Práce"><img src="./img/work/01.jpg" alt="reference" title="reference"></img></a> -->
+            <!-- TODDO scale image on hover -->
+            <img src="../img/work/01.jpg" alt="reference" title="reference" @click="openLightbox">
             <span class="card__text">
               <p><b>Realizace pergoly</b></p>
               <p class="card__text--small">Pergoly</p>
             </span>
           </div>
           <div class="card">
-            <!-- <a href="./img/work/strecha02.jpg" data-lightbox="show-1" data-title="Práce"><img src="./img/work/strecha02.jpg" alt="reference" title="reference"></img></a> -->
+            <!-- <a href="./img/work/strecha02.jpg" data-lightbox="show-1" data-title="Práce"><img src="./img/work/strecha02.jpg" alt="reference" title="reference"></img> -->
             <span class="card__text">
               <p><b>Realizace střesního krovu</b></p>
               <p class="card__text--small">Krovy</p>
@@ -82,12 +83,13 @@
         <p class="homepage__main--intro__title">
           Máte-li jakýkoliv dotaz, nebo Vás zajímají ceny našich služeb, můžete nám zavolat, nebo využít kontaktního formuláře kliknutím na tlačítko.
         </p>
-        <button class="header-button">
+        <button class="header-button contact-button">
           <a href="contact.html">Kontaktní formulář</a>
         </button>
       </section>
     </main>
     <Footer />
+    <Lightbox :is-open="isLightboxOpened" @closeLightbox="isLightboxOpened=false" />
   </div>
 </template>
 
@@ -98,9 +100,21 @@ import time from '../img/icons/time.svg'
 export default {
   data () {
     return {
+      isLightboxOpened: false,
       tool,
       heart,
-      time
+      time,
+      images: [
+        '../img/work/01.jpg',
+        '../img/work/02.jpg',
+        '../img/work/03.jpg'
+      ]
+    }
+  },
+
+  methods: {
+    openLightbox () {
+      this.isLightboxOpened = true
     }
   }
 }
