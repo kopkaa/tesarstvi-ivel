@@ -8,7 +8,7 @@ footer {
     padding: 0 $layout_padding;
 
     h3 {
-      @include fontLato(1rem, 800);
+      @include sans(1rem, 800);
       text-transform: uppercase;
       color: white;
       margin-top: 5rem;
@@ -49,7 +49,7 @@ footer {
           align-items: center;
         }
         span {
-          @include fontLato(0.875rem, 500);
+          @include sans(0.875rem, 500);
           color: white;
           display: inline-block;
         }
@@ -76,7 +76,7 @@ footer {
     a {
       text-align: left;
       text-decoration: none;
-      @include fontLato(0.875rem, 900);
+      @include sans(0.875rem, 900);
       color: darken($light-grey, 20%);
     }
   }
@@ -132,7 +132,7 @@ footer {
         margin-left: 1rem;
 
         a {
-          @include fontLato(1rem, 300);
+          @include sans(1rem, 300);
           text-decoration: none;
           color: white;
         }

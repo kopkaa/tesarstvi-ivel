@@ -10,7 +10,7 @@
   p {
     color: #696969;
     font-size: 1rem;
-    
+
   }
 
   .line {
@@ -22,7 +22,7 @@
     justify-content: center;
 
     span {
-      @include fontLato(1rem, 500);
+      @include sans(1rem, 500);
       color: white;
       display: inline-block;
 
@@ -45,7 +45,7 @@
        flex-direction: column;
        flex: 2;
        max-width: 45%;
-  
+
        input,
        textarea {
          padding: 0.625rem .75rem;
@@ -60,15 +60,15 @@
        textarea {
          min-height: 150px;
        }
-       
+
        #submit {
          color: white;
          margin: 0px;
          font-weight: 500;
        }
-  
+
      }
-  
+
      &__info {
        flex: 3;
      }

@@ -46,7 +46,7 @@
 
 
 		    	h3 {
-						@include fontLato(1.25rem, 800);
+						@include sans(1.25rem, 800);
 						display: flex;
 						align-items: center;
 						color: $text-color;

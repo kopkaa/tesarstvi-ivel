@@ -13,7 +13,7 @@
   p {
     color: #696969;
     font-size: 1rem;
-    
+
   }
 
   .line {
@@ -29,7 +29,7 @@
     }
 
     span {
-      @include fontLato(1rem, 500);
+      @include sans(1rem, 500);
       color: white;
       display: inline-block;
 
@@ -83,7 +83,7 @@
           &:hover {
             border-color: #8d6b48;
             color: #8d6b48;
-            cursor: pointer;          
+            cursor: pointer;
           }
       }
 
@@ -117,7 +117,7 @@
         text-align: center;
 
         .main {
-          @include fontLato(4rem, 500);
+          @include sans(4rem, 500);
           text-transform: uppercase;
           color: white;
           margin: 0px!important;
@@ -126,9 +126,9 @@
         .second {
           display: block;
           color: white;
-          @include fontLato(1.2rem, 300);
-          padding: 0 5em;  
-          text-shadow: 2px 1px black;     
+          @include sans(1.2rem, 300);
+          padding: 0 5em;
+          text-shadow: 2px 1px black;
         }
       }
   }
