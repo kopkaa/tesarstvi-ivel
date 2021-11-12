@@ -84,7 +84,9 @@
           Máte-li jakýkoliv dotaz, nebo Vás zajímají ceny našich služeb, můžete nám zavolat, nebo využít kontaktního formuláře kliknutím na tlačítko.
         </p>
         <button class="header-button contact-button">
-          <a href="contact.html">Kontaktní formulář</a>
+          <NuxtLink to="/kontakt">
+            Kontaktní formulář
+          </NuxtLink>
         </button>
       </section>
     </main>

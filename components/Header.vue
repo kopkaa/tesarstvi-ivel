@@ -12,6 +12,7 @@
         </div> -->
 
         <ul>
+          <!-- //TODO transitions -->
           <li>
             <NuxtLink to="/">
               Úvod
@@ -23,17 +24,33 @@
               Služby
             </NuxtLink>
           </li>
-          <li><a href="gallery.html">Galerie</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
+          <li>
+            <NuxtLink to="/galerie">
+              Galerie
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/kontakt">
+              Kontakt
+            </NuxtLink>
+          </li>
         </ul>
 
         <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
-            <a href="index.html">Úvod</a>
-            <a href="services.html">Služby</a>
-            <a href="gallery.html">Galerie</a>
-            <a href="contact.html">Kontakt</a>
+            <NuxtLink to="/">
+              Úvod
+            </NuxtLink>
+            <NuxtLink to="/sluzby">
+              Služby
+            </NuxtLink>
+            <NuxtLink to="/galerie">
+              Galerie
+            </NuxtLink>
+            <NuxtLink to="/kontakt">
+              Kontakt
+            </NuxtLink>
           </div>
         </div>
         <div><a class="hamburger" onclick="openNav()">☰</a></div>

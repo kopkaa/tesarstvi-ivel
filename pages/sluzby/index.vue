@@ -18,7 +18,7 @@
       <div class="services">
         <div class="services__row">
           <div class="item">
-            <!-- <img src="./img/roof.png"> -->
+            <img src="../../img/roof.png">
             <h3>Střechy</h3>
             <p>Střešní práce jsou naši hlavní doménou.</p>
             <button class="services__more">
@@ -26,7 +26,7 @@
             </button>
           </div>
           <div class="item">
-            <!-- <img src="./img/house.png"> -->
+            <img src="../../img/house.png">
             <h3>Dřevostavby</h3>
             <p>Postavíme vám pergolu, posed nebo garáž</p>
             <button class="services__more">
@@ -34,9 +34,9 @@
             </button>
           </div>
           <div class="item">
-            <!-- <img src="./img/tile.png"> -->
+            <img src="../../img/carpentry.png">
             <h3>Ostatní</h3>
-            <p>Také stavíme dřevěné fasády, terasy, přístřešky</p>
+            <p>Stavíme také ploty, terasy nebo přístřešky</p>
             <button class="services__more">
               Více
             </button>
@@ -50,3 +50,9 @@
     <Footer />
   </div>
 </template>
+<script>
+
+export default {
+
+}
+</script>
