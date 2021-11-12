@@ -65,10 +65,10 @@
             </span>
           </div>
           <div class="photo-list">
-            <img src="../img/work/zahrada03.jpg" class="" alt="práce">
-            <img src="../img/work/zahrada01.jpg" class="" alt="práce">
-            <img src="../img/work/podlaha01.jpg" class="" alt="práce">
-            <img src="../img/work/krov04.jpg" class="" alt="práce">
+            <img src="../img/work/zahrada03.jpg" class="" alt="práce" @click="openLightbox(2)">
+            <img src="../img/work/zahrada01.jpg" class="" alt="práce" @click="openLightbox(3)">
+            <img src="../img/work/podlaha01.jpg" class="" alt="práce" @click="openLightbox(4)">
+            <img src="../img/work/krov04.jpg" class="" alt="práce" @click="openLightbox(5)">
           </div>
           <div class="photo-list__controls">
             <span class="dot" />
@@ -99,8 +99,11 @@ import heart from '../img/icons/heart.svg'
 import time from '../img/icons/time.svg'
 import work1 from '../img/work/01.jpg'
 import work2 from '../img/work/strecha02.jpg'
-// import work1 from '../img/work/01.jpg'
-// import work1 from '../img/work/01.jpg'
+import zahrada03 from '../img/work/zahrada03.jpg'
+import zahrada01 from '../img/work/zahrada01.jpg'
+import podlaha01 from '../img/work/podlaha01.jpg'
+import krov04 from '../img/work/krov04.jpg'
+
 export default {
   data () {
     return {
@@ -112,8 +115,10 @@ export default {
       images: [
         work1,
         work2,
-        '../img/work/02.jpg',
-        '../img/work/03.jpg'
+        zahrada03,
+        zahrada01,
+        podlaha01,
+        krov04
       ]
     }
   },

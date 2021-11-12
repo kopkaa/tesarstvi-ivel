@@ -1,9 +1,10 @@
 <template>
-  <header>
+  <header
+    :class="[isHomepage ? 'h-100' : 'h-70' ]"
+  >
     <!-- udleat height podle props a bg-img taky -->
     <div
       class="header__main"
-      :class="[isHomepage ? 'header__main--homepage' : '', ]"
     >
       <nav>
         <!-- <div>
@@ -11,8 +12,17 @@
         </div> -->
 
         <ul>
-          <li><a href="index.html">Úvod</a></li>
-          <li><a href="services.html">Služby</a></li>
+          <li>
+            <NuxtLink to="/">
+              Úvod
+            </NuxtLink>
+          </li>
+
+          <li>
+            <NuxtLink to="/sluzby">
+              Služby
+            </NuxtLink>
+          </li>
           <li><a href="gallery.html">Galerie</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
