@@ -5,6 +5,7 @@
     <!-- udleat height podle props a bg-img taky -->
     <div
       class="header__main"
+      :class="getCss()"
     >
       <nav>
         <!-- <div>
@@ -63,6 +64,20 @@
 <script>
 
 export default {
-  props: ['isHomepage']
+  props: ['isHomepage', 'page'],
+
+  methods: {
+    getCss () {
+      if (this.page === 'services') {
+        return 'header__main--services'
+      } else if (this.page === 'contact') {
+        return 'header__main--contact'
+      } else if (this.page === 'homepage') {
+        return 'header__main--homepage'
+      } else {
+        return ''
+      }
+    }
+  }
 }
 </script>

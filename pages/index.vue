@@ -1,6 +1,6 @@
 <template>
   <div class="h-100">
-    <Header is-homepage="true">
+    <Header is-homepage="true" page="homepage">
       <template #header_title>
         <div class="header__main--title">
           <h1 class="main">
@@ -123,6 +123,10 @@ export default {
         krov04
       ]
     }
+  },
+
+  created () {
+    console.log('CREATED BY JAN HROMADKA WITH 💓\ncontact me for collab janxhromadka@outlook.cz')
   },
 
   methods: {

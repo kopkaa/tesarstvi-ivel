@@ -1,10 +1,10 @@
 <template>
   <div class="h-100">
-    <Header>
+    <Header page="services">
       <template #header_title>
         <div class="header__main--title">
           <h1 class="main">
-            Tesařství kabeláč
+            Služby
           </h1><br>
           <span class="second">Nabízíme montáže suchých staveb, realizaci fasád, dřevostaveb, prodej stavebních materiálů atd.</span>
           <button id="infoBtn" class="header-button">
