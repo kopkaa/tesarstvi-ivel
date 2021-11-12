@@ -7,9 +7,6 @@
             Služby
           </h1><br>
           <span class="second">Nabízíme montáže suchých staveb, realizaci fasád, dřevostaveb, prodej stavebních materiálů atd.</span>
-          <button id="infoBtn" class="header-button">
-            Více informací
-          </button>
         </div>
       </template>
     </Header>

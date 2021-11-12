@@ -1,15 +1,12 @@
 <template>
   <div class="h-100">
-    <Header>
+    <Header page="contact">
       <template #header_title>
         <div class="header__main--title">
           <h1 class="main">
-            Tesařství kabeláč
+            Kontakt
           </h1><br>
-          <span class="second">Nabízíme montáže suchých staveb, realizaci fasád, dřevostaveb, prodej stavebních materiálů atd.</span>
-          <button id="infoBtn" class="header-button">
-            Více informací
-          </button>
+          <span class="second">Obraťe se na nás s jakoukoli poptávkou či dotazem.</span>
         </div>
       </template>
     </Header>
@@ -46,8 +43,3 @@
     <Footer />
   </div>
 </template>
-<script>
-export default {
-
-}
-</script>

@@ -6,7 +6,7 @@
           <h1 class="main">
             Tesařství kabeláč
           </h1><br>
-          <span class="second">Nabízíme montáže suchých staveb, realizaci fasád, dřevostaveb, prodej stavebních materiálů atd.</span>
+          <span class="second">Naše firma nabízí všechny řemeslné práce spojené se dřevem a dřevěnými stavbami.</span>
           <button id="infoBtn" class="header-button">
             Více informací
           </button>
