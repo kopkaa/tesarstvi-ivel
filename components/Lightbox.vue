@@ -2,7 +2,7 @@
   <div v-if="isOpen" class="lightbox" @keyup.esc="closeLightbox">
     <div class="lightbox__wrapper">
       <span title="Close" class="close" @click="closeLightbox">&times;</span>
-      <img :src="images[thumbnail]">
+      <img :src="images[thumbnail]" alt="reference">
     </div>
   </div>
 </template>

@@ -13,9 +13,9 @@
         <p>Můžete nás kontaktovat formulářem na našich stránkách, případně můžete zavolat na níže uvedené číslo, nebo napsat email.</p>
         <div class="socials">
           <div class="icons">
-            <div><img :src="pin"><span>Na Plavisku 1235, Vsetín</span></div><br>
-            <div><img :src="phone"><span>774 888 357</span></div><br>
-            <div><img :src="email"><span>tesar.kabelac@seznam.cz</span></div>
+            <div><img :src="pin" alt="map pin icon"><span>Na Plavisku 1235, Vsetín</span></div><br>
+            <div><img :src="phone" alt="phone icon"><span>774 888 357</span></div><br>
+            <div><img :src="email" alt="envelope icon"><span>tesar.kabelac@seznam.cz</span></div>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@
       <div class="services">
         <div class="services__row">
           <div class="item">
-            <img src="../../img/roof.png">
+            <img src="../../img/roof.png" alt="roof icon">
             <h3>Střechy</h3>
             <p>Střešní práce jsou naši hlavní doménou.</p>
             <button class="services__more">
@@ -23,7 +23,7 @@
             </button>
           </div>
           <div class="item">
-            <img src="../../img/house.png">
+            <img src="../../img/house.png" alt="wooden house icon">
             <h3>Dřevostavby</h3>
             <p>Postavíme vám pergolu, posed nebo garáž</p>
             <button class="services__more">
@@ -31,7 +31,7 @@
             </button>
           </div>
           <div class="item">
-            <img src="../../img/carpentry.png">
+            <img src="../../img/carpentry.png" alt="tools icon">
             <h3>Ostatní</h3>
             <p>Stavíme také ploty, terasy nebo přístřešky</p>
             <button class="services__more">

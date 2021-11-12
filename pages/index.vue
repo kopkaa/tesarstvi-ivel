@@ -7,7 +7,7 @@
             Tesařství kabeláč
           </h1><br>
           <span class="second">Naše firma nabízí všechny řemeslné práce spojené se dřevem a dřevěnými stavbami.</span>
-          <button id="infoBtn" class="header-button">
+          <button id="infoBtn" class="header-button" @click="scrollTo">
             Více informací
           </button>
         </div>
@@ -22,21 +22,21 @@
         <div class="homepage__main--about">
           <div class="homepage__main--about__wrapper">
             <div>
-              <h3><img :src="heart">Kvalita</h3>
+              <h3><img :src="heart" alt="heart icon">Kvalita</h3>
               <p>Jsme profesionálové a veškerou práci děláme s láskou k našemu řemeslu. Využíváme kvalitních surovin a nástrojů. Ke každé zakázce přistupujeme indivudálně a snažíme se najít optimální řešení.</p>
             </div>
           </div>
 
           <div class="homepage__main--about__wrapper ml-14">
             <div>
-              <h3><img :src="tool">Spolehlivost</h3>
+              <h3><img :src="tool" alt="tools icon">Spolehlivost</h3>
               <p>Práci děláme poctivě. Při realizaci se snažíme vyhovět přáním klenta. Zároveň poskytujeme odborné poradenství v oblastni stavebních prací při výběru materiálu, nebo při způsobu realizace.</p>
             </div>
           </div>
 
           <div class="homepage__main--about__wrapper ml-14">
             <div>
-              <h3><img :src="time">Rychlost</h3>
+              <h3><img :src="time" alt="calendar icon">Rychlost</h3>
               <p>Díky mnohaletým zkušenostem provádíme tesařské práce rychle a kvalitně. Spolehnout se můžete na férové a rychlé jednání. Snažíme se dodržovat předem dohodnuté termíny zhotovení našich prací.  </p>
             </div>
           </div>
@@ -50,7 +50,6 @@
         </p>
         <div class="homepage__main--work__wrapper">
           <div class="card">
-            <!-- TODDO scale image on hover -->
             <img src="../img/work/01.jpg" alt="reference" title="reference" @click="openLightbox(0)">
             <span class="card__text">
               <p><b>Realizace pergoly</b></p>
@@ -67,7 +66,7 @@
           <div class="photo-list">
             <img src="../img/work/zahrada03.jpg" class="" alt="práce" @click="openLightbox(2)">
             <img src="../img/work/zahrada01.jpg" class="" alt="práce" @click="openLightbox(3)">
-            <img src="../img/work/podlaha01.jpg" class="" alt="práce" @click="openLightbox(4)">
+            <img src="../img/work/bklad01.jpg" class="" alt="práce" @click="openLightbox(4)">
             <img src="../img/work/krov04.jpg" class="" alt="práce" @click="openLightbox(5)">
           </div>
           <div class="photo-list__controls">
@@ -103,7 +102,7 @@ import work1 from '../img/work/01.jpg'
 import work2 from '../img/work/strecha02.jpg'
 import zahrada03 from '../img/work/zahrada03.jpg'
 import zahrada01 from '../img/work/zahrada01.jpg'
-import podlaha01 from '../img/work/podlaha01.jpg'
+import bklad01 from '../img/work/bklad01.jpg'
 import krov04 from '../img/work/krov04.jpg'
 
 export default {
@@ -119,7 +118,7 @@ export default {
         work2,
         zahrada03,
         zahrada01,
-        podlaha01,
+        bklad01,
         krov04
       ]
     }
@@ -133,6 +132,11 @@ export default {
     openLightbox (id) {
       this.id = id
       this.isLightboxOpened = true
+    },
+    scrollTo () {
+      const element = document.getElementById('main-intro')
+
+      element.scrollIntoView({ behavior: 'smooth' })
     }
   }
 }
