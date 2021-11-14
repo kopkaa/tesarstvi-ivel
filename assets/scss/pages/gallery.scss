@@ -14,11 +14,10 @@
   flex-wrap: wrap;
   height: auto;
   width: 100%;
-  padding: 0 14px;
+  padding: 0 4rem;
 }
 
 .gallery-item {
-  flex: 1 0 24rem;
   height: 200px;
   margin: 1rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
@@ -41,7 +40,7 @@
 @supports (display: grid) {
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     grid-gap: 2rem;
   }
 

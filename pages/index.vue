@@ -1,4 +1,5 @@
 <template>
+  <!-- TODO: Responsivity -->
   <div class="h-100">
     <Header is-homepage="true" page="homepage">
       <template #header_title>
@@ -135,7 +136,6 @@ export default {
     },
     scrollTo () {
       const element = document.getElementById('main-intro')
-
       element.scrollIntoView({ behavior: 'smooth' })
     }
   }
