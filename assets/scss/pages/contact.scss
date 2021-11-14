@@ -66,6 +66,13 @@
         color: white;
         margin: 0px;
         font-weight: 500;
+        text-transform: uppercase;
+        width: 250px;
+        margin: 0 auto 0 auto;
+      }
+
+      #submit:hover {
+        cursor: pointer;
       }
     }
 

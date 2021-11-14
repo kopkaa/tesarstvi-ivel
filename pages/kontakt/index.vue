@@ -21,7 +21,7 @@
           <input id="subject" type="text" placeholder="Předmět zprávy" required>
           <input id="email" type="email" placeholder="E-mail" required>
           <textarea id="message" placeholder="Zpráva" type="text" required />
-          <input id="submit" type="submit" class="green-button" value="Poslat">
+          <input id="submit" type="submit" class="contact-button" value="Poslat">
         </form>
       </div>
       <div class="line">
