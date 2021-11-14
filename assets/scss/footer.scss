@@ -48,7 +48,7 @@ footer {
           display: flex;
           align-items: center;
         }
-        span {
+        span, a {
           @include sans(0.875rem, 500);
           color: white;
           display: inline-block;
@@ -116,7 +116,7 @@ footer {
     }
 
     p {
-      font-size: 0.875rem;
+      font-size: 0.675rem;
       text-align: center;
       color: white;
       padding: 14px 0px;

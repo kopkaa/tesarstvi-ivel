@@ -35,14 +35,22 @@ header {
     &--homepage {
       height: 100%;
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/background.jpg");
+      background-size: 100% 100%;
     }
 
     &--services {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/krov04.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/zahrada01.jpg");
+      background-size: 100% 100%;
     }
 
     &--contact {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/krov04.jpg");
+      background-size: 100% 100%;
+    }
+
+    &--gallery {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/krov03.jpg");
+      background-size: 100% 100%;
     }
   }
 

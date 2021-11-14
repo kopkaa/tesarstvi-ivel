@@ -2,7 +2,6 @@
   <header
     :class="[isHomepage ? 'h-100' : 'h-70' ]"
   >
-    <!-- udleat height podle props a bg-img taky -->
     <div
       class="header__main"
       :class="getCss()"
@@ -13,7 +12,6 @@
         </div> -->
 
         <ul>
-          <!-- //TODO transitions -->
           <li>
             <NuxtLink to="/">
               Úvod
@@ -74,6 +72,8 @@ export default {
         return 'header__main--contact'
       } else if (this.page === 'homepage') {
         return 'header__main--homepage'
+      } else if (this.page === 'gallery') {
+        return 'header__main--gallery'
       } else {
         return ''
       }
