@@ -99,12 +99,12 @@
 import tool from '../img/icons/tool.svg'
 import heart from '../img/icons/heart.svg'
 import time from '../img/icons/time.svg'
-import work1 from '../img/work/01.jpg'
-import work2 from '../img/work/strecha02.jpg'
-import zahrada03 from '../img/work/zahrada03.jpg'
-import zahrada01 from '../img/work/zahrada01.jpg'
-import bklad01 from '../img/work/bklad01.jpg'
-import krov04 from '../img/work/krov04.jpg'
+// import work1 from '../img/work/01.jpg'
+// import work2 from '../img/work/strecha02.jpg'
+// import zahrada03 from '../img/work/zahrada03.jpg'
+// import zahrada01 from '../img/work/zahrada01.jpg'
+// import bklad01 from '../img/work/bklad01.jpg'
+// import krov04 from '../img/work/krov04.jpg'
 
 export default {
   data () {
@@ -114,15 +114,22 @@ export default {
       tool,
       heart,
       time,
-      images: [
-        work1,
-        work2,
-        zahrada03,
-        zahrada01,
-        bklad01,
-        krov04
-      ]
+      images: []
+      // images: [
+      //   work1,
+      //   work2,
+      //   zahrada03,
+      //   zahrada01,
+      //   bklad01,
+      //   krov04
+      // ]
     }
+  },
+
+  mounted () {
+    this.importAll(require.context('../img/work', true, /\.(jpg|JPG|svg)$/))
+
+    console.log('images', this.images.length)
   },
 
   created () {
@@ -137,6 +144,9 @@ export default {
     scrollTo () {
       const element = document.getElementById('main-intro')
       element.scrollIntoView({ behavior: 'smooth' })
+    },
+    importAll (r) {
+      r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })))
     }
   }
 }
