@@ -23,6 +23,7 @@
     <div class="footer-second">
       <!-- TODO: pridat srdce -->
       <p>© Created by <a href="mailto:janxhromadka@outlook.cz">Jan Hromádka</a></p>
+      <!-- TODO: Udelat presmerovani -->
       <ul>
         <li><a href="index.html">Úvod</a></li>
         <li><a href="services.html">Služby</a></li>
