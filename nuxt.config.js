@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'tesarstv-ivel',
+    title: 'Tesařství Ivel',
     htmlAttrs: {
       lang: 'en'
     },

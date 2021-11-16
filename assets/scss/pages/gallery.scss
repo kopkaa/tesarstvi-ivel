@@ -7,6 +7,16 @@
     padding-top: 7rem;
     margin-top: 0px;
   }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    margin-top: 2.75rem;
+  }
 }
 
 .gallery {
@@ -36,7 +46,6 @@
   transform: scale(1.15);
 }
 
-
 @supports (display: grid) {
   .gallery {
     display: grid;
@@ -48,4 +57,13 @@
   .gallery-item {
     margin: 0;
   }
+}
+
+.vgs__gallery__container {
+  flex-direction: row !important;
+  justify-content: center !important;
+}
+
+.vgs__gallery {
+  bottom: 125px !important;
 }

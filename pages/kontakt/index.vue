@@ -13,7 +13,7 @@
     <main id="contact">
       <h2>Kontaktujte nás</h2>
       <p class="desc">
-        Popište nám stručně svůj projekt nebo co potřebujete řešit, nechte nám na Vás kontakt a my se Vám s radosti ozveme.
+        Popište nám stručně svůj projekt nebo co potřebujete řešit, nechte nám na Vás kontakt a my se Vám s radostí ozveme.
       </p>
       <div class="contact">
         <form class="contact__form">
@@ -43,3 +43,13 @@
     <Footer />
   </div>
 </template>
+<script>
+
+export default {
+  head () {
+    return {
+      title: 'Tesařství Ivel | Kontakt'
+    }
+  }
+}
+</script>

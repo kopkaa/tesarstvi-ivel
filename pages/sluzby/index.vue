@@ -57,6 +57,12 @@ export default {
     return {
       showFlag: false
     }
+  },
+
+  head () {
+    return {
+      title: 'Tesařství Ivel | Služby'
+    }
   }
 
 }
