@@ -92,6 +92,9 @@
           </NuxtLink>
         </button>
       </section>
+      <button id="scrollButton" title="Nahoru" @click="scrollTop()">
+        Top
+      </button>
     </main>
     <Footer />
   </div>
@@ -146,6 +149,9 @@ export default {
     },
     importAll (r) {
       r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })))
+    },
+    scrollTop () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 }
