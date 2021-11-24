@@ -23,7 +23,7 @@ export default {
       { name: 'keywords', content: 'content="tesařství, střechy, stavby, pokrývačství, krovy, dřevo, ploty, altány, pergoly, dřevo, dřevostavby, podlahy, střechy, valašsko"' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
     ]
   },
 

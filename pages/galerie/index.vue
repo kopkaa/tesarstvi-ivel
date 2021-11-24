@@ -23,6 +23,9 @@
           Načíst více
         </button>
       </div>
+      <button id="scrollButton" title="Nahoru">
+        <img :src="arrow" alt="top">
+      </button>
     </main>
     <Footer />
   </div>
@@ -30,6 +33,7 @@
 
 <script>
 import VueGallerySlideshow from 'vue-gallery-slideshow'
+import arrow from '../../img/prev.png'
 
 export default {
   components: {
@@ -39,7 +43,8 @@ export default {
     return {
       index: null,
       images: [],
-      IMG_MAX: 20
+      IMG_MAX: 20,
+      arrow
     }
   },
   head () {

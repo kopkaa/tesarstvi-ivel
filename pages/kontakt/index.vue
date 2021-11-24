@@ -39,13 +39,21 @@
           src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Na%20Plavisku%201235,%20Vset%C3%ADn+(Teskab)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         />
       </div>
+      <button id="scrollButton" title="Nahoru">
+        <img :src="arrow" alt="top">
+      </button>
     </main>
     <Footer />
   </div>
 </template>
 <script>
-
+import arrow from '../../img/prev.png'
 export default {
+  data () {
+    return {
+      arrow
+    }
+  },
   head () {
     return {
       title: 'Tesařství Ivel | Kontakt'

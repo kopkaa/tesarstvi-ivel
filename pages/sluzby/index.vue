@@ -45,17 +45,22 @@
       <div class="line">
         <p>Pokud máte zájem o naše služby, neváhejte nás kontaktovat.</p>
       </div>
+      <button id="scrollButton" title="Nahoru">
+        <img :src="arrow" alt="top">
+      </button>
     </main>
     <Footer />
   </div>
 </template>
 <script>
+import arrow from '../../img/prev.png'
 
 export default {
 
   data () {
     return {
-      showFlag: false
+      showFlag: false,
+      arrow
     }
   },
 

@@ -92,8 +92,8 @@
           </NuxtLink>
         </button>
       </section>
-      <button id="scrollButton" title="Nahoru" @click="scrollTop()">
-        Top
+      <button id="scrollButton" title="Nahoru">
+        <img :src="arrow" alt="top">
       </button>
     </main>
     <Footer />
@@ -111,6 +111,7 @@ import zahrada03 from '../img/work/zahrada03.jpg'
 import zahrada01 from '../img/work/zahrada01.jpg'
 import bklad01 from '../img/work/bklad01.jpg'
 import krov04 from '../img/work/krov04.jpg'
+import arrow from '../img/prev.png'
 
 export default {
   components: {
@@ -122,6 +123,7 @@ export default {
       tool,
       heart,
       time,
+      arrow,
       images: [
         work1,
         work2,
@@ -149,9 +151,6 @@ export default {
     },
     importAll (r) {
       r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })))
-    },
-    scrollTop () {
-      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 }
