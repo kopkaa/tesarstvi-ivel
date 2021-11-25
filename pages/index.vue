@@ -1,5 +1,7 @@
 <template>
   <!-- TODO: Responsivity -->
+  <!-- TODO: Email! -->
+  <!-- TODO: Automatic carousel -->
   <div class="h-100">
     <Header is-homepage="true" page="homepage">
       <template #header_title>
@@ -86,11 +88,11 @@
         <p class="homepage__main--intro__title">
           Máte-li jakýkoliv dotaz, nebo Vás zajímají ceny našich služeb, můžete nám zavolat, nebo využít kontaktního formuláře kliknutím na tlačítko.
         </p>
-        <button class="header-button contact-button">
-          <NuxtLink to="/kontakt">
+        <NuxtLink to="/kontakt" style="text-decoration: none;">
+          <button class="header-button contact-button">
             Kontaktní formulář
-          </NuxtLink>
-        </button>
+          </button>
+        </NuxtLink>
       </section>
       <button id="scrollButton" title="Nahoru">
         <img :src="arrow" alt="top">
