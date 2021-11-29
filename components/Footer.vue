@@ -2,10 +2,10 @@
   <footer>
     <div class="footer">
       <div class="column">
-        <div class="logo" />
+        <img alt="logo" class="logo" :src="logo">
       </div>
       <div class="column">
-        <h3>Tesařství kabeláč</h3>
+        <h3>Tesařství Ivel</h3>
         <p>Na trhu působíme již od roku 2005. Během této doby jsme nabrali mnoho zkušeností, díky nimž jsme schopni postavit roubenku či jinou dřevostavbu přesně podle Vašich představ. K tomu využíváme moderní postupy a technologie.</p>
       </div>
       <div class="column">
@@ -53,6 +53,7 @@ import email from '../img/icons/mail.svg'
 import pin from '../img/icons/map-pin.svg'
 import phone from '../img/icons/phone.svg'
 import heart from '../img/icons/heart.svg'
+import logo from '../img/teskab_final_png.png'
 
 export default {
   data () {
@@ -60,7 +61,8 @@ export default {
       email,
       pin,
       phone,
-      heart
+      heart,
+      logo
     }
   }
 }

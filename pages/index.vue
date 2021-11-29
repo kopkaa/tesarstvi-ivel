@@ -7,7 +7,7 @@
       <template #header_title>
         <div class="header__main--title">
           <h1 class="main">
-            Tesařství kabeláč
+            Tesařství IVEL
           </h1><br>
           <span class="second">Naše firma nabízí všechny řemeslné práce spojené se dřevem a dřevěnými stavbami.</span>
           <button id="infoBtn" class="header-button" @click="scrollTo">
