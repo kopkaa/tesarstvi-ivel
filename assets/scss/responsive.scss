@@ -2,6 +2,23 @@
   header .header__main--title .main {
     font-size: 3rem;
   }
+
+  .homepage__main--work__wrapper {
+    margin-top: 2rem;
+    .card {
+      display: none;
+    }
+
+    .photo-list {
+      flex-direction: column!important;
+
+      img {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 687px) {
@@ -97,6 +114,14 @@
         text-align: center;
       }
     }
+  }
+
+  .homepage__main--work__wrapper .card__text {
+    padding: 0.7rem;
+  }
+
+  .card__text--small {
+    margin-top: 8px;
   }
 
 
