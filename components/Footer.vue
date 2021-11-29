@@ -23,12 +23,27 @@
     <div class="footer-second">
       <!-- TODO: pridat srdce -->
       <p>© Created by <a href="mailto:janxhromadka@outlook.cz">Jan Hromádka</a></p>
-      <!-- TODO: Udelat presmerovani -->
       <ul>
-        <li><a href="index.html">Úvod</a></li>
-        <li><a href="services.html">Služby</a></li>
-        <li><a href="about.asp">Galerie</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
+        <li>
+          <NuxtLink to="/">
+            Úvod
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/sluzby">
+            Služby
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/galerie">
+            Galerie
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/kontakt">
+            Kontakt
+          </NuxtLink>
+        </li>
       </ul>
     </div>
   </footer>
