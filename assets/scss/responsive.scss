@@ -1,4 +1,7 @@
 @media only screen and (max-width: 414px) {
+  header .header__main--title .main {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 687px) {
@@ -82,6 +85,35 @@
 @media only screen and (max-width: 768px) {
   .homepage__main--about {
     flex-direction: column;
+
+    &__wrapper {
+      margin-bottom: 2rem;
+
+      h3 {
+        justify-content: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+
+  .homepage__main--intro__title {
+    padding: 0;
+  }
+
+  .homepage__main--workWithUs  {
+    padding: 3rem 10vw;
+  }
+
+  header .header__main--title .second {
+    padding: 0 1em
+  }
+
+  .ml-14 {
+    margin-left: 0;
   }
 
   body,
