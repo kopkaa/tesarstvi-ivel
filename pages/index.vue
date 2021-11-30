@@ -20,7 +20,7 @@
       <section class="homepage__main--intro">
         <h2>Kdo jsme?</h2>
         <p class="homepage__main--intro__title">
-          Tesařství Kabeláč poskytuje služby v oblasti tesařství a práci se dřevem. Máme za sebou více než 10 let praxe. Firma klade největší důraz na kvalitu provedené práce a komunikaci se zákazníkem.
+          Tesařství Ivel poskytuje služby v oblasti tesařství a práci se dřevem. Máme za sebou více než 10 let praxe. Firma klade největší důraz na kvalitu provedené práce a komunikaci se zákazníkem.
         </p>
         <div class="homepage__main--about">
           <div class="homepage__main--about__wrapper">

@@ -17,7 +17,7 @@ header {
       width: 100%;
 
       .main {
-        @include sans(4rem, 600);
+        @include sans(4rem, 900);
         text-transform: uppercase;
         color: white;
         margin: 0px !important;
@@ -116,7 +116,7 @@ header {
   }
 
   .hamburger {
-    color: black;
+    color: white;
     font-weight: bolder;
     display: none;
     zoom: 185%;
