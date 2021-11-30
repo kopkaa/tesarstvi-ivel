@@ -7,10 +7,6 @@
       :class="getCss()"
     >
       <nav>
-        <!-- <div>
-          <img width="140" height="140" alt="logo" title="logo" src="../img/teskab_final_png.png">
-        </div> -->
-
         <ul>
           <li>
             <NuxtLink to="/">
@@ -52,7 +48,9 @@
             </NuxtLink>
           </div>
         </div>
-        <div><a class="hamburger" onclick="openNav()">☰</a></div>
+        <div id="hamburger-wrapper" @onclick="openNav()">
+          <a class="hamburger">☰</a>
+        </div>
       </nav>
 
       <slot name="header_title" />
@@ -63,7 +61,12 @@
 
 export default {
   props: ['isHomepage', 'page'],
-
+  mounted () {
+    const hamburger = document.getElementById('hamburger-wrapper')
+    hamburger.addEventListener('click', function (e) {
+      document.getElementById('myNav').style.display = 'block'
+    })
+  },
   methods: {
     getCss () {
       if (this.page === 'services') {
@@ -78,6 +81,7 @@ export default {
         return ''
       }
     }
+
   }
 }
 </script>
