@@ -32,7 +32,7 @@
         </ul>
 
         <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a id="closeHamburger" href="javascript:void(0)" class="closebtn">&times;</a>
           <div class="overlay-content">
             <NuxtLink to="/">
               Úvod
@@ -65,6 +65,11 @@ export default {
     const hamburger = document.getElementById('hamburger-wrapper')
     hamburger.addEventListener('click', function (e) {
       document.getElementById('myNav').style.display = 'block'
+    })
+
+    const hamburgerClose = document.getElementById('closeHamburger')
+    hamburgerClose.addEventListener('click', function (e) {
+      document.getElementById('myNav').style.display = 'none'
     })
   },
   methods: {
