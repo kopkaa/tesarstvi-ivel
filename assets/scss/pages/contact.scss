@@ -50,9 +50,8 @@
       input,
       textarea {
         padding: 0.625rem 0.75rem;
-        font-family: "Lato";
+        @include sans(0.875, 400);
         color: black;
-        font-size: 0.875em;
         border: none;
         margin-bottom: 2rem;
         border-radius: 24px;
