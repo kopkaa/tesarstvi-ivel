@@ -53,24 +53,24 @@
         </p>
         <div class="homepage__main--work__wrapper">
           <div class="card">
-            <img src="../img/work/01.jpg" alt="reference" title="reference" @click="index = 0">
+            <img src="../img/work/01.webp" alt="reference" title="reference" @click="index = 0">
             <span class="card__text">
               <p><b>Realizace pergoly</b></p>
               <p class="card__text--small">Pergoly</p>
             </span>
           </div>
           <div class="card">
-            <img src="../img/work/strecha02.jpg" alt="reference" title="reference" @click="index = 1">
+            <img src="../img/work/strecha02.webp" alt="reference" title="reference" @click="index = 1">
             <span class="card__text">
               <p><b>Realizace střesního krovu</b></p>
               <p class="card__text--small">Krovy</p>
             </span>
           </div>
           <div class="photo-list">
-            <img src="../img/work/zahrada03.jpg" class="" alt="práce" @click="index = 2">
-            <img src="../img/work/zahrada01.jpg" class="" alt="práce" @click="index = 3">
-            <img src="../img/work/bklad01.jpg" class="" alt="práce" @click="index = 4">
-            <img src="../img/work/krov04.jpg" class="" alt="práce" @click="index = 5">
+            <img src="../img/work/zahrada03.webp" class="" alt="práce" @click="index = 2">
+            <img src="../img/work/zahrada01.webp" class="" alt="práce" @click="index = 3">
+            <img src="../img/work/bklad01.webp" class="" alt="práce" @click="index = 4">
+            <img src="../img/work/krov04.webp" class="" alt="práce" @click="index = 5">
           </div>
           <div class="photo-list__controls">
             <span class="dot" />
@@ -107,12 +107,12 @@ import VueGallerySlideshow from 'vue-gallery-slideshow'
 import tool from '../img/icons/tool.svg'
 import heart from '../img/icons/heart.svg'
 import time from '../img/icons/time.svg'
-import work1 from '../img/work/01.jpg'
-import work2 from '../img/work/strecha02.jpg'
-import zahrada03 from '../img/work/zahrada03.jpg'
-import zahrada01 from '../img/work/zahrada01.jpg'
-import bklad01 from '../img/work/bklad01.jpg'
-import krov04 from '../img/work/krov04.jpg'
+import work1 from '../img/work/01.webp'
+import work2 from '../img/work/strecha02.webp'
+import zahrada03 from '../img/work/zahrada03.webp'
+import zahrada01 from '../img/work/zahrada01.webp'
+import bklad01 from '../img/work/bklad01.webp'
+import krov04 from '../img/work/krov04.webp'
 import arrow from '../img/prev.png'
 
 export default {
