@@ -14,7 +14,7 @@
       <h2>Zde můžete najít pár ukázek naši práce</h2>
       <div class="gallery">
         <div v-for="(image, i) in images.slice(0,IMG_MAX)" :key="i" class="gallery-item" @click="index = i">
-          <img class="gallery-image" :src="image" alt="work reference">
+          <img class="gallery-image" :src="image" rel="preload" alt="work reference">
         </div>
         <vue-gallery-slideshow :images="images" :index="index" @close="index = null" />
       </div>

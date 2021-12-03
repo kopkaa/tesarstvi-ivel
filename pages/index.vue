@@ -33,7 +33,7 @@
           <div class="homepage__main--about__wrapper ml-14">
             <div>
               <h3><img :src="tool" alt="tools icon">Spolehlivost</h3>
-              <p>Práci děláme poctivě. Při realizaci se snažíme vyhovět přáním klenta. Zároveň poskytujeme odborné poradenství v oblastni stavebních prací při výběru materiálu, nebo při způsobu realizace.</p>
+              <p>Práci děláme poctivě. Při realizaci se snažíme vyhovět přáním klenta. Zároveň poskytujeme odborné poradenství v oblasti stavebních prací při výběru materiálu, nebo při způsobu realizace.</p>
             </div>
           </div>
 
