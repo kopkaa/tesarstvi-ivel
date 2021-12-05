@@ -10,7 +10,7 @@
     }
 
     .photo-list {
-      flex-direction: column!important;
+      flex-direction: column !important;
 
       img {
         margin-left: 0;
@@ -46,7 +46,7 @@
   }
 
   .services {
-    padding-top: 0!important;
+    padding-top: 0 !important;
   }
   .services__row {
     flex-direction: column;
@@ -70,14 +70,6 @@
 
   .footer-second {
     padding: 0 8vw !important;
-  }
-
-  .hamburger {
-    float: right;
-    display: block !important;
-    padding: 12px;
-    position: relative;
-    zoom: 185%;
   }
 
   ul {
@@ -120,10 +112,9 @@
   }
 
   .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    position: fixed;
+    right: 4px;
+    font-size: 3rem;
   }
 }
 
@@ -134,14 +125,21 @@
     top: 10px;
   }
 
-  .homepage__main--intro, .homepage__main--work  {
-    padding-top: 4rem
+  .hamburger {
+    float: right;
+    display: block !important;
+    padding: 12px;
+    zoom: 185%;
+  }
+
+  .homepage__main--intro,
+  .homepage__main--work {
+    padding-top: 4rem;
   }
 
   .homepage__main--work {
     margin-top: 4rem;
   }
-
 
   .homepage__main--about {
     flex-direction: column;
@@ -168,17 +166,16 @@
     margin-top: 8px;
   }
 
-
   .homepage__main--intro__title {
     padding: 0;
   }
 
-  .homepage__main--workWithUs  {
+  .homepage__main--workWithUs {
     padding: 3rem 10vw;
   }
 
   header .header__main--title .second {
-    padding: 0 1em
+    padding: 0 1em;
   }
 
   .ml-14 {
@@ -203,7 +200,7 @@
 
   .footer {
     flex-direction: column !important;
-    padding-top: 3rem!important;
+    padding-top: 3rem !important;
 
     .socials {
       width: 100%;

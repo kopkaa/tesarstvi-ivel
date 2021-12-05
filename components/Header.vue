@@ -1,11 +1,6 @@
 <template>
-  <header
-    :class="[isHomepage ? 'h-100' : 'h-70' ]"
-  >
-    <div
-      class="header__main"
-      :class="getCss()"
-    >
+  <header :class="[isHomepage ? 'h-100' : 'h-70']">
+    <div class="header__main" :class="getCss()">
       <nav>
         <ul>
           <li>
@@ -32,7 +27,11 @@
         </ul>
 
         <div id="myNav" class="overlay">
-          <a id="closeHamburger" href="javascript:void(0)" class="closebtn">&times;</a>
+          <a
+            id="closeHamburger"
+            href="javascript:void(0)"
+            class="closebtn"
+          >&times;</a>
           <div class="overlay-content">
             <NuxtLink to="/">
               Úvod
@@ -58,18 +57,19 @@
   </header>
 </template>
 <script>
-
 export default {
   props: ['isHomepage', 'page'],
   mounted () {
     const hamburger = document.getElementById('hamburger-wrapper')
     hamburger.addEventListener('click', function (e) {
       document.getElementById('myNav').style.display = 'block'
+      hamburger.style.display = 'none'
     })
 
     const hamburgerClose = document.getElementById('closeHamburger')
     hamburgerClose.addEventListener('click', function (e) {
       document.getElementById('myNav').style.display = 'none'
+      hamburger.style.display = 'block'
     })
   },
   methods: {
@@ -86,7 +86,6 @@ export default {
         return ''
       }
     }
-
   }
 }
 </script>
