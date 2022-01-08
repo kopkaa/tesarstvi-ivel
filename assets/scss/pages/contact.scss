@@ -24,7 +24,9 @@
     span {
       @include sans(1rem, 500);
       color: white;
-      display: inline-block;
+      display: flex;
+      align-items: center;
+
 
       i {
         margin-right: 0.5rem;
@@ -32,6 +34,10 @@
 
       &:first-of-type {
         margin-right: 2rem;
+      }
+
+      img {
+        margin-right: 8px;
       }
     }
   }

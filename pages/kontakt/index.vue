@@ -19,14 +19,14 @@
         <form class="contact__form">
           <input id="name" type="text" placeholder="Jméno">
           <input id="subject" type="text" placeholder="Předmět zprávy" required>
-          <input id="email" type="email" placeholder="E-mail" required>
+          <input id="phone" type="email" placeholder="E-mail" required>
           <textarea id="message" placeholder="Zpráva" type="text" required />
           <input id="submit" type="submit" class="contact-button" value="Poslat">
         </form>
       </div>
       <div class="line">
-        <span> <i class="far fa-envelope" />tesar.kabelac@seznam.cz</span>
-        <span><i class="fas fa-mobile-alt" />774 888 357</span><br>
+        <span> <img :src="email" width="25" alt="map  icon">tesar.kabelac@seznam.cz</span>
+        <span><img :src="phone" width="25" alt="phone  icon">774 888 357</span><br>
       </div>
       <div style="width: 100%">
         <iframe
@@ -48,10 +48,15 @@
 </template>
 <script>
 import arrow from '../../img/prev.png'
+import email from '../../img/icons/mail.svg'
+import phone from '../../img/icons/phone.svg'
+
 export default {
   data () {
     return {
-      arrow
+      arrow,
+      email,
+      phone
     }
   },
   head () {
