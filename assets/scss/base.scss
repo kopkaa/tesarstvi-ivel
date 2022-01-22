@@ -34,6 +34,7 @@ p {
   color: $text-color;
   @include sans(1rem, 500);
   margin-top: 0px;
+  line-height: 1.5;
 }
 
 .ml-14 {
