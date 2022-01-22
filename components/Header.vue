@@ -1,6 +1,12 @@
 <template>
   <header :class="[isHomepage ? 'h-100' : 'h-70']">
     <div class="header__main" :class="getCss()">
+      <div v-if="isHomepage" class="crossfade">
+        <div class="img-1" />
+        <div class="img-2" />
+        <div class="img-3" />
+        <div class="img-4" />
+      </div>
       <nav>
         <ul>
           <li>
