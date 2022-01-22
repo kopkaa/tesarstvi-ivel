@@ -6,16 +6,16 @@
       </div>
       <div class="column">
         <h3>Tesařství Ivel</h3>
-        <p>Na trhu působíme již od roku 2005. Během této doby jsme nabrali mnoho zkušeností, díky nimž jsme schopni postavit roubenku či jinou dřevostavbu přesně podle Vašich představ. K tomu využíváme moderní postupy a technologie.</p>
+        <p>Na trhu působíme již od roku 2008. Během této doby jsme nabrali mnoho zkušeností, díky nimž jsme schopni postavit roubenku či jinou dřevostavbu přesně podle Vašich představ. K tomu využíváme moderní postupy a technologie.</p>
       </div>
       <div class="column">
         <h3>Kontakt</h3>
         <p>Můžete nás kontaktovat formulářem na našich stránkách, případně můžete zavolat na níže uvedené číslo, nebo napsat email.</p>
         <div class="socials">
           <div class="icons">
-            <div><img :src="pin" alt="map pin icon"><span>Na Plavisku 1235, Vsetín</span></div><br>
+            <div><img :src="pin" alt="map pin icon"><span>Růžďka 281, 756 25</span></div><br>
             <div><img :src="phone" alt="phone icon"><span>774 888 357</span></div><br>
-            <div><img :src="email" alt="envelope icon"><span><a href="mailto:tesar.kabelac@seznam.cz"> tesar.kabelac@seznam.cz </a></span></div>
+            <div><img :src="email" alt="envelope icon"><span><a href="mailto:tesar.kabelac@seznam.cz"> info@tesarivel.cz </a></span></div>
           </div>
         </div>
       </div>
