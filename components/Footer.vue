@@ -15,7 +15,8 @@
           <div class="icons">
             <div><img :src="pin" alt="map pin icon"><span>Růžďka 281, 756 25</span></div><br>
             <div><img :src="phone" alt="phone icon"><span>774 888 357</span></div><br>
-            <div><img :src="email" alt="envelope icon"><span><a href="mailto:tesar.kabelac@seznam.cz"> info@tesarivel.cz </a></span></div>
+            <div><img :src="email" alt="envelope icon"><span><a href="mailto:tesar.kabelac@seznam.cz">tesar.kabelac@tesarivel.cz </a></span></div><br>
+            <div><span class="icons--ico">IČO:</span><span> 76293858</span></div>
           </div>
         </div>
       </div>

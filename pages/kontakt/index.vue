@@ -36,7 +36,7 @@
           scrolling="no"
           marginheight="0"
           marginwidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Na%20Plavisku%201235,%20Vset%C3%ADn+(Teskab)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?q=R%C5%AF%C5%BE%C4%8Fka%20281,%20756%2025&t=&z=13&ie=UTF8&iwloc=&output=embed"
         />
       </div>
       <button id="scrollButton" title="Nahoru">

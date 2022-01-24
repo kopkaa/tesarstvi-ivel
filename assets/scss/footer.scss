@@ -43,12 +43,16 @@ footer {
     .socials {
       margin-right: auto;
       .icons {
-        display: block !important;
+        &--ico {
+          font-size: 1rem!important;
+          margin-right: 6px;
+        }
         div {
           display: flex;
           align-items: center;
         }
-        span, a {
+        span,
+        a {
           @include sans(0.875rem, 500);
           color: white;
           display: inline-block;
