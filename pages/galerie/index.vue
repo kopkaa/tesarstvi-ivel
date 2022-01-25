@@ -13,7 +13,9 @@
     <main id="gallery">
       <h2>Zde můžete najít pár ukázek naši práce</h2>
       <div class="gallery">
-        <div><span>Dřevostavby</span></div>
+        <div @click="goTo('drevostavby')">
+          <span>Dřevostavby</span>
+        </div>
         <div><span>Střechy</span></div>
       </div>
       <div class="gallery gallery--second">
@@ -67,6 +69,10 @@ export default {
 
     loadMore () {
       this.IMG_MAX += 20
+    },
+
+    goTo (category) {
+      this.$router.push('/galerie/drevostavby')
     }
   }
 
