@@ -1,7 +1,5 @@
 <template>
-  <!-- TODO: Responsivity -->
   <!-- TODO: Email! -->
-  <!-- TODO: Automatic carousel -->
   <div class="h-100">
     <Header is-homepage="true" page="homepage">
       <template #header_title>

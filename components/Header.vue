@@ -8,6 +8,9 @@
         <div class="img-4" />
       </div>
       <nav>
+        <ul v-if="false">
+          <li>Telefon</li>
+        </ul>
         <ul>
           <li>
             <NuxtLink to="/">

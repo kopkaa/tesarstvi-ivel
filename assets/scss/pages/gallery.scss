@@ -25,6 +25,34 @@
   height: auto;
   width: 100%;
   padding: 0 4rem;
+
+  div {
+    background-color: red;
+    flex-grow: 1;
+    height: 300px;
+    width: 200px;
+  }
+  div:nth-child(even) {
+    flex-grow: 2;
+    flex-shrink: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/zahrada01.webp");
+    background-size: 100% 100%;
+  }
+
+  &--second {
+    div {
+      background-color: blured;
+      flex-grow: 2;
+      height: 300px;
+      width: 200px;
+      background: blue;
+    }
+    div:nth-child(even) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/P2170004.webp");
+      background-size: 100% 100%;
+      flex-grow: 1;
+    }
+  }
 }
 
 .gallery-item {
@@ -45,19 +73,6 @@
 .gallery-image:hover {
   cursor: pointer;
   transform: scale(1.15);
-}
-
-@supports (display: grid) {
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    grid-gap: 2rem;
-  }
-
-  .gallery,
-  .gallery-item {
-    margin: 0;
-  }
 }
 
 .vgs__gallery__container {

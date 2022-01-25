@@ -50,20 +50,20 @@ More information about the usage of this directory in [the documentation](https:
 
 ## `todo`
 
-Footer - better aligment
-Responsivity - spolehlivost.... align left
+Footer - better aligment  - DONE
+Responsivity - spolehlivost.... align left - DONE
 
 
-ICO: 76293858
-https://www.tesartvi-ivel.cz/
+ICO: 76293858 - DONE
+https://www.tesartvi-ivel.cz/ - TODO
 
 
 // pracovni email
-info@tesarstvi-ivel.cz
+info@tesarstvi-ivel.cz - TODO
 
-netlify formular vyzkouset
+netlify formular vyzkouset - TODO
 
-hlavicka - fotky loop
-galerie - kategorie - drevostavby, strechy, pristresky a pergoly, ostatni
-fotky postupne - roubeni
+hlavicka - fotky loop - DONE
+galerie - kategorie - drevostavby, strechy, rekonstrukce, pristresky a pergoly, ostatni - TODO
+fotky postupne - roubeni -TODO
   

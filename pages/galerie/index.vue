@@ -13,11 +13,14 @@
     <main id="gallery">
       <h2>Zde můžete najít pár ukázek naši práce</h2>
       <div class="gallery">
-        <div v-for="(image, i) in images.slice(0,IMG_MAX)" :key="i" class="gallery-item" @click="index = i">
-          <img class="gallery-image" :src="image" rel="preload" alt="work reference">
-        </div>
-        <vue-gallery-slideshow :images="images" :index="index" @close="index = null" />
+        <div />
+        <div />
       </div>
+      <div class="gallery gallery--second">
+        <div />
+        <div />
+      </div>
+      <!--
       <div class="wrapper">
         <button class="header-button contact-button" @click="loadMore">
           Načíst více
@@ -25,19 +28,19 @@
       </div>
       <button id="scrollButton" title="Nahoru">
         <img :src="arrow" alt="top">
-      </button>
+      </button> -->
     </main>
     <Footer />
   </div>
 </template>
 
 <script>
-import VueGallerySlideshow from 'vue-gallery-slideshow'
+// import VueGallerySlideshow from 'vue-gallery-slideshow'
 import arrow from '../../img/prev.png'
 
 export default {
   components: {
-    VueGallerySlideshow
+    // VueGallerySlideshow
   },
   data () {
     return {
