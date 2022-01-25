@@ -6,19 +6,19 @@
           <h1 class="main">
             Galerie
           </h1><br>
-          <span class="second">Zde je pár ukázek naši práce</span>
+          <!-- <span class="second">Zde je pár ukázek naši práce</span> -->
         </div>
       </template>
     </Header>
     <main id="gallery">
       <h2>Zde můžete najít pár ukázek naši práce</h2>
       <div class="gallery">
-        <div />
-        <div />
+        <div><span>Dřevostavby</span></div>
+        <div><span>Střechy</span></div>
       </div>
       <div class="gallery gallery--second">
-        <div />
-        <div />
+        <div><span>Přístřešky a pergoly</span></div>
+        <div><span>Rekonstrukce</span></div>
       </div>
       <!--
       <div class="wrapper">

@@ -3,6 +3,14 @@
     font-size: 3rem;
   }
 
+  .gallery {
+    div {
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
   .homepage__main--work__wrapper {
     margin-top: 2rem;
     .card {
@@ -27,6 +35,14 @@
     ul {
       display: none;
     }
+  }
+  header .header__main--services,
+  header .header__main--contact,
+  header .header__main--gallery {
+    background-size: cover;
+  }
+  .gallery {
+    flex-direction: column;
   }
 
   #contact p {

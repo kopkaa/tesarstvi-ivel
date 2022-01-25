@@ -22,34 +22,55 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   height: auto;
   width: 100%;
   padding: 0 4rem;
 
   div {
-    background-color: red;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/1642858616533.jpg");
     flex-grow: 1;
-    height: 300px;
-    width: 200px;
+    min-height: 300px;
+    width: auto;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 1rem;
+
+    span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: white;
+      text-transform: uppercase;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      @include sans(2rem, 800);
+    }
+
+    &:hover {
+      transform: scale(1.04);
+      cursor: pointer;
+    }
   }
   div:nth-child(even) {
     flex-grow: 2;
     flex-shrink: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/zahrada01.webp");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    position: relative;
   }
 
   &--second {
     div {
-      background-color: blured;
       flex-grow: 2;
-      height: 300px;
-      width: 200px;
-      background: blue;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/P2170004.webp");
     }
     div:nth-child(even) {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/P2170004.webp");
-      background-size: 100% 100%;
       flex-grow: 1;
     }
   }
