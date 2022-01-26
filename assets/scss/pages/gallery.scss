@@ -27,9 +27,14 @@
   width: 100%;
   padding: 0 4rem;
 
-  div {
+  &--category {
+    padding: 6rem 4rem;
+  }
+
+  &__item {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/ostatni/1642858616533.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../img/drevostavby/PB104178.webp");
     flex-grow: 1;
     min-height: 300px;
     width: auto;
@@ -54,31 +59,31 @@
       cursor: pointer;
     }
   }
-  // div:nth-child(even) {
-  //   flex-grow: 2;
-  //   flex-shrink: 0;
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/zahrada01.webp");
-  //   background-size: cover;
-  //   background-repeat: none;
-  //   background-position: center;
-  //   position: relative;
-  // }
+  div:nth-child(even) {
+    flex-grow: 2;
+    flex-shrink: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/strechy/img203.webp");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    position: relative;
+  }
 
-  // &--second {
-  //   div {
-  //     flex-grow: 2;
-  //     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/P2170004.webp");
-  //   }
-  //   div:nth-child(even) {
-  //     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/P2170004.webp");
-  //     flex-grow: 1;
-  //   }
-  // }
+  &--second {
+    div {
+      flex-grow: 2;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/header/2.webp");
+    }
+    div:nth-child(even) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../img/rekonstrukce/svedsko/P5312794.webp");
+      flex-grow: 1;
+    }
+  }
 }
 
 .gallery-item {
   height: 200px;
-  margin: 1rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }

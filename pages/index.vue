@@ -149,9 +149,6 @@ export default {
       const element = document.getElementById('main-intro')
       element.scrollIntoView({ behavior: 'smooth' })
     }
-    // importAll (r) {
-    //   r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })))
-    // }
   }
 }
 </script>
