@@ -15,8 +15,8 @@
       <p class="desc">
         Popište nám stručně svůj projekt nebo co potřebujete řešit, nechte nám na Vás kontakt a my se Vám s radostí ozveme.
       </p>
-      <div class="contact">
-        <form class="contact__form">
+      <div class="contact" data-netlify="true">
+        <form id="contact-form" class="contact__form" name="contact" method="POST">
           <input id="name" type="text" placeholder="Jméno">
           <input id="subject" type="text" placeholder="Předmět zprávy" required>
           <input id="phone" type="email" placeholder="E-mail" required>
@@ -38,6 +38,11 @@
           marginwidth="0"
           src="https://maps.google.com/maps?q=R%C5%AF%C5%BE%C4%8Fka%20281,%20756%2025&t=&z=13&ie=UTF8&iwloc=&output=embed"
         />
+      </div>
+      <div id="toast">
+        <div id="desc">
+          E-mail byl úspešně odeslán!
+        </div>
       </div>
       <button id="scrollButton" title="Nahoru">
         <img :src="arrow" alt="top">
@@ -63,6 +68,36 @@ export default {
     return {
       title: 'Tesařství Ivel | Kontakt'
     }
+  },
+
+  mounted () {
+    const handleSubmit = (e) => {
+      e.preventDefault()
+      const myForm = document.getElementById('contact-form')
+      const formData = new FormData(myForm)
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+        .then(() => this.launch())
+        .catch(error => alert(error))
+    }
+    document
+      .querySelector('form')
+      .addEventListener('submit', handleSubmit)
+  },
+  methods: {
+    launch () {
+      const x = document.getElementById('toast')
+      x.className = 'show'
+      setTimeout(function () { x.className = x.className.replace('show', '') }, 5000)
+    }
   }
+
 }
 </script>
+<style lang="sass" scoped>
+@import '../../assets/scss/toast.scss'
+
+</style>
