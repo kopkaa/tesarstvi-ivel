@@ -4,13 +4,13 @@
       <template #header_title>
         <div class="header__main--title">
           <h1 class="main">
-            Dřevostavby
+            Přístřešky a pergoly
           </h1><br>
           <span class="second">Zde je pár ukázek naši práce</span>
         </div>
       </template>
     </Header>
-    <main id="gallery-drevostavby">
+    <main>
       <div class="gallery gallery--category">
         <div v-for="(image, i) in images.slice(0,IMG_MAX)" :key="i" class="gallery-item gallery__item--category" @click="index = i">
           <img class="gallery-image" :src="image" alt="work reference" loading="lazy">
@@ -42,18 +42,18 @@ export default {
     return {
       index: null,
       images: [],
-      IMG_MAX: 20,
+      IMG_MAX: 50,
       arrow
     }
   },
   head () {
     return {
-      title: 'Tesařství Ivel | Dřevostavby'
+      title: 'Tesařství Ivel | Přístřešky'
     }
   },
 
   beforeMount () {
-    this.importAll(require.context('../../img/drevostavby', true, /\.(webp|JPG|svg)$/))
+    this.importAll(require.context('../../img/pristresky', true, /\.(webp|JPG|svg)$/))
   },
 
   methods: {

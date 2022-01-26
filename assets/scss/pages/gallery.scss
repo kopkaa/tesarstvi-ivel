@@ -42,6 +42,17 @@
     overflow: hidden;
     margin-bottom: 1rem;
 
+    &--rekonstrukce {
+      flex-grow: 1 !important;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../img/rekonstrukce/svedsko/P5312794.webp");
+
+      &:nth-child(2n) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../img/rekonstrukce/zubri/PC194365.webp")!important;
+      }
+    }
+
     span {
       position: absolute;
       left: 50%;
@@ -104,7 +115,7 @@
 .vgs__gallery__container {
   flex-direction: row !important;
   justify-content: center !important;
-  background: none!important;
+  background: none !important;
 }
 
 .vgs__gallery {
@@ -114,10 +125,10 @@
 .back-button {
   margin-top: 1rem;
   flex-basis: 100%;
-  background: none!important;
+  background: none !important;
 
   button {
-    margin: unset!important;
+    margin: unset !important;
     display: flex;
     align-items: center;
     padding: 0.5rem;
@@ -130,4 +141,9 @@
       cursor: pointer;
     }
   }
+}
+
+.vgs {
+  position: fixed !important;
+  background-image: none !important;
 }

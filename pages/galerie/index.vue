@@ -27,15 +27,10 @@
           <span>Rekonstrukce</span>
         </div>
       </div>
-      <!--
-      <div class="wrapper">
-        <button class="header-button contact-button" @click="loadMore">
-          Načíst více
-        </button>
-      </div>
+
       <button id="scrollButton" title="Nahoru">
         <img :src="arrow" alt="top">
-      </button> -->
+      </button>
     </main>
     <Footer />
   </div>
@@ -77,7 +72,7 @@ export default {
     },
 
     goTo (category) {
-      this.$router.push('/galerie/drevostavby')
+      this.$router.push(`/galerie/${category}`)
     }
   }
 

@@ -4,18 +4,20 @@
       <template #header_title>
         <div class="header__main--title">
           <h1 class="main">
-            Dřevostavby
+            Rekonstrukce
           </h1><br>
           <span class="second">Zde je pár ukázek naši práce</span>
         </div>
       </template>
     </Header>
-    <main id="gallery-drevostavby">
+    <main>
       <div class="gallery gallery--category">
-        <div v-for="(image, i) in images.slice(0,IMG_MAX)" :key="i" class="gallery-item gallery__item--category" @click="index = i">
-          <img class="gallery-image" :src="image" alt="work reference" loading="lazy">
+        <div class="gallery__item gallery__item--rekonstrukce" @click="goTo('drevostavby')">
+          <span>Švédsko</span>
         </div>
-        <vue-gallery-slideshow :images="images" :index="index" @close="index = null" />
+        <div class="gallery__item gallery__item--rekonstrukce" @click="goTo('strechy')">
+          <span>Zubří</span>
+        </div>
         <div class="back-button">
           <button class="header-button contact-button" aria-label="Back" @click="goBack">
             <img :src="arrow" alt="back"> Zpět
@@ -31,34 +33,38 @@
 </template>
 
 <script>
-import VueGallerySlideshow from 'vue-gallery-slideshow'
+
 import arrow from '../../img/prev.png'
 
 export default {
-  components: {
-    VueGallerySlideshow
-  },
+
   data () {
     return {
       index: null,
-      images: [],
-      IMG_MAX: 20,
+      images: {
+        zubri: []
+      },
+      IMG_MAX: 50,
       arrow
     }
   },
   head () {
     return {
-      title: 'Tesařství Ivel | Dřevostavby'
+      title: 'Tesařství Ivel | Rekonstrukce'
     }
   },
 
   beforeMount () {
-    this.importAll(require.context('../../img/drevostavby', true, /\.(webp|JPG|svg)$/))
+    this.importZubri(require.context('../../img/rekonstrukce/zubri', true, /\.(webp|JPG|svg)$/))
   },
 
   methods: {
-    importAll (r) {
-      r.keys().forEach(key => (this.images.push(r(key))))
+    importZubri (r) {
+      r.keys().forEach(key => (this.images.zubri.push(r(key))))
+    },
+
+    importSvedsko (r) {
+      r.keys().forEach(key => (this.images.svedsko.push(r(key))))
     },
 
     goBack () {
