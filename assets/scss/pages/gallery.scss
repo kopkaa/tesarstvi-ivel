@@ -104,6 +104,7 @@
 .vgs__gallery__container {
   flex-direction: row !important;
   justify-content: center !important;
+  background: none!important;
 }
 
 .vgs__gallery {
@@ -113,6 +114,7 @@
 .back-button {
   margin-top: 1rem;
   flex-basis: 100%;
+  background: none!important;
 
   button {
     margin: unset!important;
