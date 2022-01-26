@@ -37,18 +37,13 @@
 </template>
 
 <script>
-// import VueGallerySlideshow from 'vue-gallery-slideshow'
+
 import arrow from '../../img/prev.png'
 
 export default {
-  components: {
-    // VueGallerySlideshow
-  },
+
   data () {
     return {
-      index: null,
-      images: [],
-      IMG_MAX: 20,
       arrow
     }
   },
@@ -58,18 +53,7 @@ export default {
     }
   },
 
-  mounted () {
-    // this.importAll(require.context('../../img/work', true, /\.(webp|JPG|svg)$/))
-  },
-
   methods: {
-    importAll (r) {
-      r.keys().forEach(key => (this.images.push(r(key))))
-    },
-
-    loadMore () {
-      this.IMG_MAX += 20
-    },
 
     goTo (category) {
       this.$router.push(`/galerie/${category}`)

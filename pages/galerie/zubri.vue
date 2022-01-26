@@ -4,7 +4,7 @@
       <template #header_title>
         <div class="header__main--title">
           <h1 class="main">
-            Rekonstrukce
+            Rekonstrukce - Zubří
           </h1><br>
           <span class="second">Zde je pár ukázek naši práce</span>
         </div>
@@ -12,12 +12,10 @@
     </Header>
     <main>
       <div class="gallery gallery--category">
-        <div class="gallery__item gallery__item--rekonstrukce" @click="goTo('svedsko')">
-          <span>Švédsko</span>
+        <div v-for="(image, i) in images" :key="i" class="gallery-item gallery__item--category" @click="index = i">
+          <img class="gallery-image" :src="image" alt="work reference" loading="lazy">
         </div>
-        <div class="gallery__item gallery__item--rekonstrukce" @click="goTo('zubri')">
-          <span>Zubří</span>
-        </div>
+        <vue-gallery-slideshow :images="images" :index="index" @close="index = null" />
         <div class="back-button">
           <button class="header-button contact-button" aria-label="Back" @click="goBack">
             <img :src="arrow" alt="back"> Zpět
@@ -33,42 +31,34 @@
 </template>
 
 <script>
-
+import VueGallerySlideshow from 'vue-gallery-slideshow'
 import arrow from '../../img/prev.png'
 
 export default {
-
+  components: {
+    VueGallerySlideshow
+  },
   data () {
     return {
       index: null,
-      images: {
-        zubri: []
-      },
+      images: [],
       IMG_MAX: 50,
       arrow
     }
   },
   head () {
     return {
-      title: 'Tesařství Ivel | Rekonstrukce'
+      title: 'Tesařství Ivel | Rekonstrukce - Zubří'
     }
   },
 
   beforeMount () {
-    this.importZubri(require.context('../../img/rekonstrukce/zubri', true, /\.(webp|JPG|svg)$/))
+    this.importAll(require.context('../../img/rekonstrukce/zubri', true, /\.(webp|JPG|svg)$/))
   },
 
   methods: {
-    importZubri (r) {
-      r.keys().forEach(key => (this.images.zubri.push(r(key))))
-    },
-
-    importSvedsko (r) {
-      r.keys().forEach(key => (this.images.svedsko.push(r(key))))
-    },
-
-    goTo (subcategory) {
-      this.$router.push(`/galerie/${subcategory}`)
+    importAll (r) {
+      r.keys().forEach(key => (this.images.push(r(key))))
     },
 
     goBack () {
