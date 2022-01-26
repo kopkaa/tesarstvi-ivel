@@ -25,7 +25,7 @@
         </form>
       </div>
       <div class="line">
-        <span> <img :src="email" width="25" alt="map  icon">tesar.kabelac@seznam.cz</span>
+        <span> <img :src="email" width="25" alt="map  icon">tesar.ivel@seznam.cz</span>
         <span><img :src="phone" width="25" alt="phone  icon">774 888 357</span><br>
       </div>
       <div style="width: 100%">

@@ -16,6 +16,11 @@
           <img class="gallery-image" :src="image" rel="preload" alt="work reference">
         </div>
         <vue-gallery-slideshow :images="images" :index="index" @close="index = null" />
+        <div class="back-button">
+          <button class="header-button contact-button" aria-label="Back" @click="goBack">
+            <img :src="arrow" alt="back"> Zpět
+          </button>
+        </div>
       </div>
       <button id="scrollButton" title="Nahoru">
         <img :src="arrow" alt="top">
@@ -51,17 +56,13 @@ export default {
     this.importAll(require.context('../../img/drevostavby', true, /\.(webp|JPG|svg)$/))
   },
 
-  created () {
-    console.log('IMAGES', this.images)
-  },
-
   methods: {
     importAll (r) {
       r.keys().forEach(key => (this.images.push(r(key))))
     },
 
-    goTo () {
-      this.$router.push('/galerie')
+    goBack () {
+      this.$router.go(-1)
     }
   }
 
