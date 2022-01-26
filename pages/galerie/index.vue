@@ -59,7 +59,7 @@ export default {
   },
 
   mounted () {
-    this.importAll(require.context('../../img/work', true, /\.(webp|JPG|svg)$/))
+    // this.importAll(require.context('../../img/work', true, /\.(webp|JPG|svg)$/))
   },
 
   methods: {

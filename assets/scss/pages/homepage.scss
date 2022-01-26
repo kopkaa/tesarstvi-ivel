@@ -97,6 +97,10 @@
             }
           }
 
+          img {
+            height: 100%;
+          }
+
           &:hover {
             box-shadow: 3px 4px 2px grey;
           }
@@ -113,6 +117,7 @@
           img {
             width: calc(25% - 1.5rem);
             margin-left: 2rem;
+            max-height: 80%;
 
             &:hover {
               cursor: pointer;

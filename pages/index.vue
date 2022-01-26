@@ -51,24 +51,24 @@
         </p>
         <div class="homepage__main--work__wrapper">
           <div class="card">
-            <img src="../img/work/01.webp" alt="reference" title="reference" @click="index = 0">
+            <img src="../img/pristresky/P7210139.webp" alt="reference" title="reference" @click="index = 0">
             <span class="card__text">
               <p><b>Realizace pergoly</b></p>
               <p class="card__text--small">Pergoly</p>
             </span>
           </div>
           <div class="card">
-            <img src="../img/work/strecha02.webp" alt="reference" title="reference" @click="index = 1">
+            <img src="../img/header/2.webp" alt="reference" title="reference" @click="index = 1">
             <span class="card__text">
-              <p><b>Realizace střesního krovu</b></p>
-              <p class="card__text--small">Krovy</p>
+              <p><b>Realizace garážového stání</b></p>
+              <p class="card__text--small">Přístřešky</p>
             </span>
           </div>
           <div class="photo-list">
-            <img src="../img/work/zahrada03.webp" class="" alt="práce" @click="index = 2">
-            <img src="../img/work/zahrada01.webp" class="" alt="práce" @click="index = 3">
-            <img src="../img/work/bklad01.webp" class="" alt="práce" @click="index = 4">
-            <img src="../img/work/krov04.webp" class="" alt="práce" @click="index = 5">
+            <img src="../img/pristresky/img187.webp" class="" alt="práce" @click="index = 2">
+            <img src="../img/drevostavby/PB104177.webp" class="" alt="práce" @click="index = 3">
+            <img src="../img/pristresky/img196.webp" class="" alt="práce" @click="index = 4">
+            <img src="../img/ostatni/1642858616540.webp" class="" alt="práce" @click="index = 5">
           </div>
           <div class="photo-list__controls">
             <span class="dot" />
@@ -105,12 +105,12 @@ import VueGallerySlideshow from 'vue-gallery-slideshow'
 import tool from '../img/icons/tool.svg'
 import heart from '../img/icons/heart.svg'
 import time from '../img/icons/time.svg'
-import work1 from '../img/work/01.webp'
-import work2 from '../img/work/strecha02.webp'
-import zahrada03 from '../img/work/zahrada03.webp'
-import zahrada01 from '../img/work/zahrada01.webp'
-import bklad01 from '../img/work/bklad01.webp'
-import krov04 from '../img/work/krov04.webp'
+import work1 from '../img/pristresky/P7210139.webp'
+import work2 from '../img/header/2.webp'
+import zahrada03 from '../img/pristresky/img187.webp'
+import zahrada01 from '../img/drevostavby/PB104177.webp'
+import bklad01 from '../img/pristresky/img196.webp'
+import krov04 from '../img/ostatni/1642858616540.webp'
 import arrow from '../img/prev.png'
 
 export default {
@@ -148,10 +148,10 @@ export default {
     scrollTo () {
       const element = document.getElementById('main-intro')
       element.scrollIntoView({ behavior: 'smooth' })
-    },
-    importAll (r) {
-      r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })))
     }
+    // importAll (r) {
+    //   r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })))
+    // }
   }
 }
 </script>

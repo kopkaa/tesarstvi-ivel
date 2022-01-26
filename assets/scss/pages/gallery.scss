@@ -29,7 +29,7 @@
 
   div {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/ostatni/1642858616533.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/ostatni/1642858616533.webp");
     flex-grow: 1;
     min-height: 300px;
     width: auto;
@@ -54,26 +54,26 @@
       cursor: pointer;
     }
   }
-  div:nth-child(even) {
-    flex-grow: 2;
-    flex-shrink: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/zahrada01.webp");
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    position: relative;
-  }
+  // div:nth-child(even) {
+  //   flex-grow: 2;
+  //   flex-shrink: 0;
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/zahrada01.webp");
+  //   background-size: cover;
+  //   background-repeat: none;
+  //   background-position: center;
+  //   position: relative;
+  // }
 
-  &--second {
-    div {
-      flex-grow: 2;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/P2170004.webp");
-    }
-    div:nth-child(even) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/P2170004.webp");
-      flex-grow: 1;
-    }
-  }
+  // &--second {
+  //   div {
+  //     flex-grow: 2;
+  //     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/P2170004.webp");
+  //   }
+  //   div:nth-child(even) {
+  //     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/work/P2170004.webp");
+  //     flex-grow: 1;
+  //   }
+  // }
 }
 
 .gallery-item {
