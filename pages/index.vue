@@ -51,24 +51,24 @@
         </p>
         <div class="homepage__main--work__wrapper">
           <div class="card">
-            <img src="../img/pristresky/P7210139.webp" alt="reference" title="reference" @click="index = 0">
+            <img src="../img/pristresky/P7210139.webp" alt="reference" title="reference" loading="lazy" @click="index = 0">
             <span class="card__text">
               <p><b>Realizace pergoly</b></p>
               <p class="card__text--small">Pergoly</p>
             </span>
           </div>
           <div class="card">
-            <img src="../img/header/2.webp" alt="reference" title="reference" @click="index = 1">
+            <img src="../img/header/2.webp" alt="reference" title="reference" loading="lazy" @click="index = 1">
             <span class="card__text">
               <p><b>Realizace garážového stání</b></p>
               <p class="card__text--small">Přístřešky</p>
             </span>
           </div>
           <div class="photo-list">
-            <img src="../img/pristresky/img187.webp" class="" alt="práce" @click="index = 2">
-            <img src="../img/drevostavby/PB104177.webp" class="" alt="práce" @click="index = 3">
-            <img src="../img/pristresky/img196.webp" class="" alt="práce" @click="index = 4">
-            <img src="../img/ostatni/1642858616540.webp" class="" alt="práce" @click="index = 5">
+            <img src="../img/pristresky/img187.webp" class="" alt="práce" loading="lazy" @click="index = 2">
+            <img src="../img/drevostavby/PB104177.webp" class="" alt="práce" loading="lazy" @click="index = 3">
+            <img src="../img/pristresky/img196.webp" class="" alt="práce" loading="lazy" @click="index = 4">
+            <img src="../img/ostatni/1642858616540.webp" class="" alt="práce" loading="lazy" @click="index = 5">
           </div>
           <div class="photo-list__controls">
             <span class="dot" />
