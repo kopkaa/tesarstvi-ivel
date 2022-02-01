@@ -73,11 +73,14 @@
   div:nth-child(even) {
     flex-grow: 2;
     flex-shrink: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/strechy/img203.webp");
     background-size: cover;
     background-repeat: none;
     background-position: center;
     position: relative;
+  }
+
+  .bg:nth-child(even) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/strechy/img203.webp");
   }
 
   &--second {

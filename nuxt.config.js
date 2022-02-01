@@ -5,9 +5,6 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   mode: 'spa',
-  // router: {
-  //   base: '/tesarstvi-ivel/'
-  // },
 
   server: {
     host: '0.0.0.0'
@@ -54,6 +51,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     optimizeCss: true,
+    extractCSS: true,
     optimization: {
       splitChunks: {
         cacheGroups: {

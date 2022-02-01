@@ -15,7 +15,7 @@
         <div class="gallery__item" @click="goTo('drevostavby')">
           <span>Dřevostavby</span>
         </div>
-        <div class="gallery__item" @click="goTo('strechy')">
+        <div class="gallery__item bg" @click="goTo('strechy')">
           <span>Střechy</span>
         </div>
       </div>
