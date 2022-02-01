@@ -81,7 +81,7 @@ export default {
         body: new URLSearchParams(formData).toString()
       })
         .then(() => this.launch())
-        .catch(error => alert(error))
+        .catch(error => alert(`Nepodařilo se nám odeslat email!\n ${JSON.stringify(error)}`))
     }
     document
       .querySelector('form')

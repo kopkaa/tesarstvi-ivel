@@ -21,7 +21,11 @@
     align-items: center;
     justify-content: center;
 
-    span {
+    a {
+      text-decoration: none
+    }
+
+    span, a {
       @include sans(1rem, 500);
       color: white;
       display: flex;
