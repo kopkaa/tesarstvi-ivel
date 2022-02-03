@@ -12,7 +12,7 @@
     </Header>
     <main>
       <div class="gallery gallery--category">
-        <div v-for="(image, i) in images.slice(0,IMG_MAX)" :key="i" class="gallery-item gallery__item--category" @click="index = i">
+        <div v-for="(image, i) in images" :key="i" class="gallery-item gallery__item--category" @click="index = i">
           <img class="gallery-image" :src="image" alt="work reference" loading="lazy">
         </div>
         <vue-gallery-slideshow :images="images" :index="index" @close="index = null" />
@@ -42,7 +42,6 @@ export default {
     return {
       index: null,
       images: [],
-      IMG_MAX: 50,
       arrow
     }
   },

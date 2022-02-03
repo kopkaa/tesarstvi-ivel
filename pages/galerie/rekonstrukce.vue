@@ -44,7 +44,6 @@ export default {
       images: {
         zubri: []
       },
-      IMG_MAX: 50,
       arrow
     }
   },
