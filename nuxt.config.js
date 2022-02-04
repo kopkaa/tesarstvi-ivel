@@ -39,10 +39,14 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
+  modules: [
      'nuxt-purgecss',
+     '@nuxtjs/sitemap'
   ],
 
+  sitemap: {
+     hostname: 'https://tesarstvi-ivel.cz',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -58,7 +58,8 @@
       max-width: 45%;
 
       input,
-      textarea {
+      textarea,
+      #submit {
         padding: 0.625rem 0.75rem;
         @include sans(0.875, 400);
         color: black;
@@ -73,11 +74,10 @@
 
       #submit {
         color: white;
-        margin: 0px;
-        font-weight: 500;
         text-transform: uppercase;
         width: 250px;
         margin: 0 auto 0 auto;
+        font-weight: bold;
       }
 
       #submit:hover {

@@ -15,13 +15,15 @@
       <p class="desc">
         Popište nám stručně svůj projekt nebo co potřebujete řešit, nechte nám na Vás kontakt a my se Vám s radostí ozveme.
       </p>
-      <div class="contact" data-netlify="true">
-        <form id="contact-form" class="contact__form" name="contact" method="POST">
-          <input id="name" type="text" placeholder="Jméno">
-          <input id="subject" type="text" placeholder="Předmět zprávy" required>
-          <input id="phone" type="email" placeholder="E-mail" required>
-          <textarea id="message" placeholder="Zpráva" type="text" required />
-          <input id="submit" type="submit" class="contact-button" value="Poslat">
+      <div class="contact">
+
+        <form id="contact-form"  method="POST" netlify="true" class="contact__form" name="Kontakt">
+          <input id="name" name="jmeno" type="text" placeholder="Jméno">
+          <input id="subject" name="predmet" type="text" placeholder="Předmět zprávy" required>
+          <input id="phone" name="email" type="email" placeholder="E-mail" required>
+          <textarea id="message" name="zprava" placeholder="Zpráva" type="text" required />
+          <input type="hidden" name="form-name" value="Kontakt" />
+          <button type="submit" id="submit" class="contact-button">Poslat</button>
         </form>
       </div>
       <div class="line">
@@ -31,6 +33,7 @@
       <div style="width: 100%">
         <iframe
           width="100%"
+          title="map"
           height="375"
           frameborder="0"
           scrolling="no"
@@ -71,21 +74,21 @@ export default {
   },
 
   mounted () {
-    const handleSubmit = (e) => {
-      e.preventDefault()
-      const myForm = document.getElementById('contact-form')
-      const formData = new FormData(myForm)
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
-      })
-        .then(() => this.launch())
-        .catch(error => alert(`Nepodařilo se nám odeslat email!\n ${JSON.stringify(error)}`))
-    }
-    document
-      .querySelector('form')
-      .addEventListener('submit', handleSubmit)
+    // const handleSubmit = (e) => {
+    //   e.preventDefault()
+    //   const myForm = document.getElementById('contact-form')
+    //   const formData = new FormData(myForm)
+    //   fetch('/', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //     body: new URLSearchParams(formData).toString()
+    //   })
+    //     .then(() => this.launch())
+    //     .catch(error => alert(`Nepodařilo se nám odeslat email!\n ${JSON.stringify(error)}`))
+    // }
+    // document
+    //   .querySelector('form')
+    //   .addEventListener('submit', handleSubmit)
   },
   methods: {
     launch () {
