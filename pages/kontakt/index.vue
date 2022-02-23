@@ -20,7 +20,8 @@
         <form id="contact-form"  method="POST" netlify="true" class="contact__form" name="Kontakt">
           <input id="name" name="jmeno" type="text" placeholder="Jméno">
           <input id="subject" name="predmet" type="text" placeholder="Předmět zprávy" required>
-          <input id="phone" name="email" type="email" placeholder="E-mail" required>
+          <input id="email" name="email" type="email" placeholder="E-mail" required>
+          <input id="phone" name="phone" type="tel" placeholder="Telefon" required>
           <textarea id="message" name="zprava" placeholder="Zpráva" type="text" required />
           <input type="hidden" name="form-name" value="Kontakt" />
           <button type="submit" id="submit" class="contact-button">Poslat</button>
