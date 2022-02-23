@@ -76,7 +76,6 @@
     background-size: cover;
     background-repeat: none;
     background-position: center;
-    position: relative;
   }
 
   .bg:nth-child(even) {
@@ -115,15 +114,15 @@
   transform: scale(1.15);
 }
 
-.vgs__gallery__container {
-  flex-direction: row !important;
-  justify-content: center !important;
-  background: none !important;
-}
+// .vgs__gallery__container {
+//   flex-direction: row !important;
+//   justify-content: center !important;
+//   background: none !important;
+// }
 
-.vgs__gallery {
-  bottom: 125px !important;
-}
+// .vgs__gallery {
+//   bottom: 125px !important;
+// }
 
 .back-button {
   margin-top: 1rem;
@@ -146,7 +145,3 @@
   }
 }
 
-.vgs {
-  position: fixed !important;
-  background-image: none !important;
-}
