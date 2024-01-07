@@ -27,6 +27,14 @@
           <span>Rekonstrukce</span>
         </div>
       </div>
+      <div class="gallery">
+        <div class="gallery__item gallery__item--schody" @click="goTo('schody')">
+          <span>Schody</span>
+        </div>
+        <div class="gallery__item gallery__item--ostatni" @click="goTo('ostatni')">
+          <span>Ostatní</span>
+        </div>
+      </div>
 
       <button id="scrollButton" title="Nahoru">
         <img :src="arrow" alt="top">
