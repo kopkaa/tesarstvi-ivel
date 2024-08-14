@@ -1,5 +1,4 @@
 <template>
-  <!-- TODO: Email! -->
   <div class="h-100">
     <Header is-homepage="true" page="homepage">
       <template #header_title>

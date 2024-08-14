@@ -38,7 +38,6 @@
         <div id="myNav" class="overlay">
           <a
             id="closeHamburger"
-            href="javascript:void(0)"
             class="closebtn"
           >&times;</a>
           <div class="overlay-content">

@@ -72,36 +72,7 @@ export default {
     return {
       title: 'Tesařství Ivel | Kontakt'
     }
-  },
-
-  mounted () {
-    // const handleSubmit = (e) => {
-    //   e.preventDefault()
-    //   const myForm = document.getElementById('contact-form')
-    //   const formData = new FormData(myForm)
-    //   fetch('/', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //     body: new URLSearchParams(formData).toString()
-    //   })
-    //     .then(() => this.launch())
-    //     .catch(error => alert(`Nepodařilo se nám odeslat email!\n ${JSON.stringify(error)}`))
-    // }
-    // document
-    //   .querySelector('form')
-    //   .addEventListener('submit', handleSubmit)
-  },
-  methods: {
-    launch () {
-      const x = document.getElementById('toast')
-      x.className = 'show'
-      setTimeout(function () { x.className = x.className.replace('show', '') }, 5000)
-    }
   }
 
 }
 </script>
-<style lang="sass" scoped>
-@import '../../assets/scss/toast.scss'
-
-</style>
