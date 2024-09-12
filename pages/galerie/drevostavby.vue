@@ -1,48 +1,22 @@
 <template>
-  <div class="h-100">
-    <Header page="gallery">
-      <template #header_title>
-        <div class="header__main--title">
-          <h1 class="main">
-            Dřevostavby
-          </h1><br>
-          <span class="second">Zde je pár ukázek naši práce</span>
-        </div>
-      </template>
-    </Header>
-    <main id="gallery-drevostavby">
-      <div class="gallery gallery--category">
-        <div v-for="(image, i) in images" :key="i" class="gallery-item gallery__item--category" @click="index = i">
-          <img class="gallery-image" :src="image" alt="work reference" loading="lazy">
-        </div>
-        <vue-gallery-slideshow :images="images" :index="index" @close="index = null" />
-        <div class="back-button">
-          <button class="header-button contact-button" aria-label="Back" @click="goBack">
-            <img :src="arrow" alt="back"> Zpět
-          </button>
-        </div>
-      </div>
-      <button id="scrollButton" title="Nahoru">
-        <img :src="arrow" alt="top">
-      </button>
-    </main>
-    <Footer />
-  </div>
+  <GalleryComponent
+    :title="'Dřevostavby'"
+    :subtitle="'Zde je pár ukázek naši práce'"
+    :images="images"
+  />
 </template>
 
 <script>
-import VueGallerySlideshow from 'vue-gallery-slideshow'
-import arrow from '../../img/prev.png'
+import GalleryComponent from '../../components/GalleryComponent.vue'
 
 export default {
   components: {
-    VueGallerySlideshow
+    GalleryComponent
   },
   data () {
     return {
       index: null,
-      images: [],
-      arrow
+      images: []
     }
   },
   head () {
