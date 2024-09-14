@@ -190,27 +190,6 @@ header {
   animation-delay: 12s;
 }
 
-/* Banner Animations (4s per image, 16s total timeline)
-/*---------------------------------------------*/
-
-@keyframes crossfade {
-  /* This is the default behaviour as described by Jonathan Snook*/
-  00.00% {
-    opacity: 0;
-  }
-  06.25% {
-    opacity: 1;
-  }
-  25.00% {
-    opacity: 1;
-  }
-  31.25% {
-    opacity: 0;
-  }
-  100.0% {
-    opacity: 0;
-  }
-}
 
 @keyframes fade {
   /* By offsetting the fade out and animating z-index, we can prevent the background from showing up at all*/

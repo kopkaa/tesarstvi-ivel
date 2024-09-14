@@ -68,32 +68,32 @@
               src="../img/pristresky/img187.webp"
               alt="práce"
               loading="lazy"
-              width="100"
-              height="100"
+              width="100px"
+              height="100px"
               @click="index = 2"
             >
             <img
               src="../img/drevostavby/PB104177.webp"
               alt="práce"
               loading="lazy"
-              width="100"
-              height="100"
+              width="100px"
+              height="100px"
               @click="index = 3"
             >
             <img
               src="../img/pristresky/img196.webp"
               alt="práce"
               loading="lazy"
-              width="100"
-              height="100"
+              width="100px"
+              height="100px"
               @click="index = 4"
             >
             <img
               src="../img/ostatni/1642858616540.webp"
               alt="práce"
               loading="lazy"
-              width="100"
-              height="100"
+              width="100px"
+              height="100px"
               @click="index = 5"
             >
           </div>
