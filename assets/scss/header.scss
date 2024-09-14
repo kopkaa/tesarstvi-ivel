@@ -18,9 +18,7 @@ header {
 
       .main {
         @include sans(4rem, 900);
-        text-transform: uppercase;
         color: white;
-        margin: 0px !important;
       }
 
       .second {

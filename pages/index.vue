@@ -4,7 +4,7 @@
       <template #header_title>
         <div class="header__main--title">
           <h1 class="main">
-            Tesařství IVEL
+            TESAŘSTVÍ IVEL
           </h1><br>
           <span class="second">Naše firma nabízí všechny řemeslné práce spojené se dřevem a dřevěnými stavbami.</span>
           <button id="infoBtn" class="header-button" @click="scrollTo">
@@ -68,32 +68,32 @@
               src="../img/pristresky/img187.webp"
               alt="práce"
               loading="lazy"
-              width="100px"
-              height="100px"
+              width="200"
+              height="200"
               @click="index = 2"
             >
             <img
               src="../img/drevostavby/PB104177.webp"
               alt="práce"
               loading="lazy"
-              width="100px"
-              height="100px"
+              width="200"
+              height="200"
               @click="index = 3"
             >
             <img
               src="../img/pristresky/img196.webp"
               alt="práce"
               loading="lazy"
-              width="100px"
-              height="100px"
+              width="200"
+              height="200"
               @click="index = 4"
             >
             <img
               src="../img/ostatni/1642858616540.webp"
               alt="práce"
               loading="lazy"
-              width="100px"
-              height="100px"
+              width="200"
+              height="200"
               @click="index = 5"
             >
           </div>
