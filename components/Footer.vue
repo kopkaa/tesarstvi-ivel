@@ -22,7 +22,6 @@
       </div>
     </div>
     <div class="footer-second">
-      <p>© Created by <a href="mailto:janxhromadka@outlook.cz">Jan Hromádka</a></p>
       <ul>
         <li>
           <NuxtLink to="/">

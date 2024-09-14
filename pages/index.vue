@@ -64,10 +64,38 @@
             </span>
           </div>
           <div class="photo-list">
-            <img src="../img/pristresky/img187.webp" class="" alt="práce" loading="lazy" @click="index = 2">
-            <img src="../img/drevostavby/PB104177.webp" class="" alt="práce" loading="lazy" @click="index = 3">
-            <img src="../img/pristresky/img196.webp" class="" alt="práce" loading="lazy" @click="index = 4">
-            <img src="../img/ostatni/1642858616540.webp" class="" alt="práce" loading="lazy" @click="index = 5">
+            <img
+              src="../img/pristresky/img187.webp"
+              alt="práce"
+              loading="lazy"
+              width="100"
+              height="100"
+              @click="index = 2"
+            >
+            <img
+              src="../img/drevostavby/PB104177.webp"
+              alt="práce"
+              loading="lazy"
+              width="100"
+              height="100"
+              @click="index = 3"
+            >
+            <img
+              src="../img/pristresky/img196.webp"
+              alt="práce"
+              loading="lazy"
+              width="100"
+              height="100"
+              @click="index = 4"
+            >
+            <img
+              src="../img/ostatni/1642858616540.webp"
+              alt="práce"
+              loading="lazy"
+              width="100"
+              height="100"
+              @click="index = 5"
+            >
           </div>
           <div class="photo-list__controls">
             <span class="dot" />
@@ -118,7 +146,6 @@ export default {
   },
   data () {
     return {
-      isLightboxOpened: false,
       tool,
       heart,
       time,
@@ -140,10 +167,6 @@ export default {
   },
 
   methods: {
-    openLightbox (id) {
-      this.id = id
-      this.isLightboxOpened = true
-    },
     scrollTo () {
       const element = document.getElementById('main-intro')
       element.scrollIntoView({ behavior: 'smooth' })
