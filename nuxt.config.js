@@ -38,12 +38,26 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   modules: [
-     'nuxt-purgecss',
-     '@nuxtjs/sitemap'
+    'nuxt-purgecss',
+    '@nuxtjs/sitemap'
   ],
 
+  purgeCSS: {
+    mode: 'postcss', // or 'webpack'
+    enabled: true,
+    paths: [
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js'
+    ],
+    styleExtensions: ['.css', '.scss'],
+    whitelist: ['whitelisted-class'],
+    whitelistPatterns: [/^whitelist-pattern/]
+  },
+
   sitemap: {
-     hostname: 'https://tesarstvi-ivel.cz',
+    hostname: 'https://tesarstvi-ivel.cz'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
