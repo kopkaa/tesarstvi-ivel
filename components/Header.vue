@@ -2,15 +2,35 @@
   <header :class="[isHomepage ? 'h-100' : 'h-70']">
     <div class="header__main" :class="getCss()">
       <div v-if="isHomepage">
-        <div class="img-1" />
-        <div class="img-2" />
-        <div class="img-3" />
-        <div class="img-4" />
+        <picture>
+          <img class="hero-img img-1" src="../img/header/1.webp" loading="eager" alt="">
+        </picture>
+        <picture>
+          <img
+            class="hero-img img-2"
+            src="../img/header/2.webp"
+            loading="eager"
+            alt=""
+          >
+        </picture>
+        <picture>
+          <img
+            class="hero-img img-3"
+            src="../img/header/3.webp"
+            loading="eager"
+            alt=""
+          >
+        </picture>
+        <picture>
+          <img
+            class="hero-img img-4"
+            src="../img/header/4.webp"
+            loading="eager"
+            alt=""
+          >
+        </picture>
       </div>
       <nav>
-        <ul v-if="false">
-          <li>Telefon</li>
-        </ul>
         <ul>
           <li>
             <NuxtLink to="/">
@@ -36,10 +56,10 @@
         </ul>
 
         <div id="myNav" class="overlay">
-          <a
+          <span
             id="closeHamburger"
             class="closebtn"
-          >&times;</a>
+          >&times;</span>
           <div class="overlay-content">
             <NuxtLink to="/">
               Úvod
@@ -56,7 +76,7 @@
           </div>
         </div>
         <div id="hamburger-wrapper" @onclick="openNav()">
-          <a class="hamburger">☰</a>
+          <span class="hamburger">☰</span>
         </div>
       </nav>
 
@@ -67,6 +87,19 @@
 <script>
 export default {
   props: ['isHomepage', 'page'],
+  head () {
+    if (this.isHomepage) {
+      return {
+        link: [
+          { rel: 'preload', href: require('@/img/header/1.webp'), as: 'image' },
+          { rel: 'preload', href: require('@/img/header/2.webp'), as: 'image' },
+          { rel: 'preload', href: require('@/img/header/3.webp'), as: 'image' },
+          { rel: 'preload', href: require('@/img/header/4.webp'), as: 'image' }
+        ]
+      }
+    }
+    return {}
+  },
   mounted () {
     const hamburger = document.getElementById('hamburger-wrapper')
     hamburger.addEventListener('click', function (e) {
