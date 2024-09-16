@@ -16,15 +16,16 @@
         Popište nám stručně svůj projekt nebo co potřebujete řešit, nechte nám na Vás kontakt a my se Vám s radostí ozveme.
       </p>
       <div class="contact">
-
-        <form id="contact-form"  method="POST" netlify="true" class="contact__form" name="Kontakt">
+        <form id="contact-form" method="POST" netlify="true" class="contact__form" name="Kontakt">
           <input id="name" name="jmeno" type="text" placeholder="Jméno">
           <input id="subject" name="predmet" type="text" placeholder="Předmět zprávy" required>
           <input id="email" name="email" type="email" placeholder="E-mail" required>
           <input id="phone" name="phone" type="tel" placeholder="Telefon" required>
           <textarea id="message" name="zprava" placeholder="Zpráva" type="text" required />
-          <input type="hidden" name="form-name" value="Kontakt" />
-          <button type="submit" id="submit" class="contact-button">Poslat</button>
+          <input type="hidden" name="form-name" value="Kontakt">
+          <button id="submit" type="submit" class="contact-button">
+            Poslat
+          </button>
         </form>
       </div>
       <div class="line">
@@ -42,11 +43,6 @@
           marginwidth="0"
           src="https://maps.google.com/maps?q=R%C5%AF%C5%BE%C4%8Fka%20281,%20756%2025&t=&z=13&ie=UTF8&iwloc=&output=embed"
         />
-      </div>
-      <div id="toast">
-        <div id="desc">
-          E-mail byl úspešně odeslán!
-        </div>
       </div>
       <button id="scrollButton" title="Nahoru">
         <img :src="arrow" alt="top">
