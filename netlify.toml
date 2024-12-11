@@ -1,0 +1,8 @@
+[[headers]]
+  # Apply to all image files (adjust extensions as needed)
+  for = "/*.{png,jpg,jpeg,gif,webp,svg,avif}"
+
+  [headers.values]
+    Cache-Control = "public, max-age=15552000, immutable"
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors https://www.facebook.com"
