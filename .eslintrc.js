@@ -14,5 +14,7 @@ module.exports = {
   ],
   plugins: [
   ],
-  rules: {}
+  rules: {
+    "quotes": ["error", "double"] // Enforce double quotes
+  }
 }

@@ -1,12 +1,12 @@
 # Cache images for 6 months
-/*.jpg
+/_nuxt/img/*.jpg
   Cache-Control: public, max-age=15552000, immutable
 
-/*.png
+/_nuxt/img/*.png
   Cache-Control: public, max-age=15552000, immutable
 
-/*.gif
+/_nuxt/img/*.gif
   Cache-Control: public, max-age=15552000, immutable
 
-  /*.webp
+/_nuxt/img/*.webp
   Cache-Control: public, max-age=15552000, immutable
